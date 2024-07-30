@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NG Diseño | Contacto</title>
+    <title>NG-Diseño | Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -17,6 +19,13 @@
             <div class="header-logo">
                 <img src="../imagenes/logoheader.png" alt="Logo NG Diseño">
             </div>
+            <div class="header-logo-mobile">
+                <img src="../imagenes/logoheader_mobile.png" alt="Logo NG Diseño">
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="header-hamburguesa">
+                <img src="../imagenes/icono_hamburguesa.png" alt="Icono Menú Hamburguesa">
+            </label>
             <nav>
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
@@ -33,9 +42,9 @@
 
     <section class="herosection-5-container">
         <div class="hero5container">
-            <div class="herosection-2">
+            <div class="hero-texto-5">
                 <h1>Contacto</h1>
-                <p class="hero-texto2">
+                <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper elementum nibh ut
                     aliquet.<br>
                     Aliquam accumsan, lectus sed elementum ornare, ex felis vehicula neque, nec porttitor dolor
@@ -46,37 +55,40 @@
                     aliquam lacinia, augue sapien pulvinar neque.
                 <p>
             </div>
-        </div>
+            <div class="hero-image-5">
+                <div class="image-overlay-der-hero5"></div>
+                <img src="../imagenes/contacto_hero.jpg" alt="Imagen Contacto">
+            </div>
     </section>
 
     <!-- Formulario de Contacto -->
 
-    <section class="Formulario-container">
-        <div class="Formulario">
-            <div class="Formulario-texto">
+    <section class="formulario-container">
+        <div class="formulario">
+            <div class="formulario-texto">
                 <h2>Formulario de Contacto</h2>
-                <p class="hero-texto2">
+                <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper elementum nibh ut
                     aliquet. Aliquam accumsan, lectus sed.<br>
                     Sed posuere tortor quis augue aliquam commodo. Morbi ac mauris faucibus.
                 <p>
-                <div class="contacto-info">
-                    <div class="contacto-item">
+                <div class="contacto-info-2">
+                    <div class="contacto-item-2">
                         <i class="icono-celular"><img src="../imagenes/icono_celular.png" alt="Icono Teléfono"></i>
                         <p>+54 9 233-5 055 827</p>
                     </div>
-                    <div class="contacto-item">
+                    <div class="contacto-item-2">
                         <i class="icono-email"><img src="../imagenes/icono_mail.png" alt="Icono E-mail"></i>
                         <p>nfguagliardo@gmail.com</p>
                     </div>
-                    <div class="contacto-item">
+                    <div class="contacto-item-2">
                         <i class="icon-location"><img src="../imagenes/icono_sitio.png" alt="Icono de Ubicación"></i>
                         <p>Mar del Plata, Buenos Aires, Argentina</p>
                     </div>
                 </div>
             </div>
             <div class="Formulario-form">
-                <div class="row">
+                <div class="form-row">
                     <div class="campos">
                         <label for="Nombre">Nombre</label>
                         <input type="text" id="id-nombre" placeholder="Ej. John Doe">
@@ -86,7 +98,7 @@
                         <input type="email" id="id-email" placeholder="ejemplo@gmail.com">
                     </div>
                 </div>
-                <div class="row">
+                <div class="form-row">
                     <div class="campos">
                         <label for="celular">Teléfono</label>
                         <input type="text" id="id-celular" placeholder="+54 9 223 -XXX-XXX">
@@ -96,11 +108,11 @@
                         <input type="text" id="id-asunto" placeholder="ejemplo">
                     </div>
                 </div>
-                <div class="campos">
+                <div class="campos  textarea-mensaje">
                     <label for="mensaje">Mensaje</label>
                     <textarea id="id-mensaje" placeholder="Escriba su mensaje aquí."></textarea>
                 </div>
-                <div class="campos">
+                <div class="boton-formulario">
                     <button type="submit">Enviar</button>
                 </div>
             </div>
@@ -110,7 +122,7 @@
     <!-- Preguntas Frecuentes -->
 
     <section class="preguntas-container">
-        <div class="preguntas">
+        <div class="preguntas-texto">
             <h2>Preguntas Frecuentes</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper elementum nibh ut aliquet.
@@ -118,30 +130,96 @@
                 augue. Sed et neque scelerisque, imperdiet dui sed, auctor mauris.
             </p>
         </div>
-        <div class="preguntas-lista">
-            <div class="pregunta-item">
-                <p>¿Lorem ipsum dolor sit ame, consectetur adipiscing elit?</p>
-                <img src="../imagenes/flecha_desplegable.png" alt="Flecha abajo">
+        <div class="preguntas-lista accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        ¿Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi officiis accusamus unde vel eum
+                        nostrum, et asperiores quae repellendus iusto rem repellat quibusdam similique odio fuga nam
+                        iure voluptatibus amet?
+                    </div>
+                </div>
             </div>
-            <div class="pregunta-item">
-                <p>¿Lorem ipsum dolor sit ame, consectetur adipiscing elit?</p>
-                <img src="../imagenes/flecha_desplegable.png" alt="Flecha abajo">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        ¿Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia neque similique ad iusto
+                        quibusdam minus consequatur, nesciunt perferendis quae qui laborum nisi deserunt dicta, ipsa
+                        ratione aperiam illo autem. Debitis.
+                    </div>
+                </div>
             </div>
-            <div class="pregunta-item">
-                <p>¿Lorem ipsum dolor sit ame, consectetur adipiscing elit?</p>
-                <img src="../imagenes/flecha_desplegable.png" alt="Flecha abajo">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        ¿Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id amet quo earum voluptatum
+                        possimus pariatur labore sapiente recusandae, error totam iure non ex quos eum hic? Quaerat
+                        dolorem dolores quod!
+                    </div>
+                </div>
             </div>
-            <div class="pregunta-item">
-                <p>¿Lorem ipsum dolor sit ame, consectetur adipiscing elit?</p>
-                <img src="../imagenes/flecha_desplegable.png" alt="Flecha abajo">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour">
+                        ¿Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos sapiente enim blanditiis
+                        nisi explicabo! Id labore eos cupiditate, magni dolore animi excepturi enim, quos esse
+                        atque in laudantium nemo veniam!
+                    </div>
+                </div>
             </div>
-            <div class="pregunta-item">
-                <p>¿Lorem ipsum dolor sit ame, consectetur adipiscing elit?</p>
-                <img src="../imagenes/flecha_desplegable.png" alt="Flecha abajo">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFive">
+                        ¿Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                    </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque necessitatibus ut
+                        amet a, illum aperiam quia iste cupiditate soluta, laudantium eum at fugit adipisci
+                        perferendis minus reiciendis nulla, vitae optio.
+                    </div>
+                </div>
             </div>
-            <div class="pregunta-item">
-                <p>¿Lorem ipsum dolor sit ame, consectetur adipiscing elit?</p>
-                <img src="../imagenes/flecha_desplegable.png" alt="Flecha abajo">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseSix">
+                        ¿Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                    </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia voluptatibus
+                        nostrum reprehenderit commodi perspiciatis, eveniet voluptatum maxime nisi nam
+                        libero nemo ratione rerum illo impedit cum neque eius praesentium necessitatibus.
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -206,6 +284,14 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
 
 </body>
 

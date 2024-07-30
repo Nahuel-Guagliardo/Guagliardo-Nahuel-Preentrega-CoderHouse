@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NG-Diseño | Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -17,6 +19,13 @@
             <div class="header-logo">
                 <img src="imagenes/logoheader.png" alt="Logo NG Diseño">
             </div>
+            <div class="header-logo-mobile">
+                <img src="imagenes/logoheader_mobile.png" alt="Logo NG Diseño">
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="header-hamburguesa">
+                <img src="imagenes/icono_hamburguesa.png" alt="Icono Menú Hamburguesa">
+            </label>
             <nav>
                 <ul>
                     <li><a class="active" href="index.html">Inicio</a></li>
@@ -44,16 +53,19 @@
                     Nullam dapibus vulputate libero, ut porttitor odio placerat vel. Duis nunc nisi, euismod sed
                     ullamcorper finibus, suscipit at ex.
                 </p>
-                <a href="html/portfolio.html" class="boton-portfolio">Mi Portfolio</a>
-                <a href="html/contacto.html" class="boton-contactate">Contactate Conmigo</a>
+            </div>
+            <div class="hero-botones">
+                <a href="html/portfolio.html" class="boton-gris">Mi Portfolio</a>
+                <a href="html/contacto.html" class="boton-borde-gris">Contactate Conmigo</a>
             </div>
             <div class="hero-image">
+                <div class="image-overlay-der"></div>
                 <img src="imagenes/bienvenida.png" alt="Imagen de Bienvenida">
             </div>
         </div>
     </section>
 
-    <!-- Acerca de Mí -->
+    <!-- Acerca de Mi -->
 
     <section class="acerca-mi-container">
         <div class="acerca-mi">
@@ -73,9 +85,14 @@
                     Recientemente me adentre en el mundo del diseño UX/UI, y me encanto asi que hoy en dia me encuentro
                     ampliando mis conocimientos para convertirme en un mejor profesional.
                 </p>
-                <a href="html/sobremi.html" class="boton-cv">Mirá mi CV</a>
+                <div class="boton-container">
+                    <a href="html/sobremi.html" class="boton-bco">Mirá mi CV</a>
+                </div>
             </div>
-        </div>
+            <div class="acerca-image">
+                <div class="image-overlay-izq"></div>
+                <img src="imagenes/acercademi.jpeg" alt="Imagen acerca de mi">
+            </div>
     </section>
 
     <!-- Servicios -->
@@ -91,90 +108,206 @@
             <div class="tarjetaservicios">
                 <div class="tarjetas">
                     <div class="icono-titulo">
-                        <i class="icono-servicios"><img src="imagenes/icono_tarjetas.png" alt="Icono"></a></i>
+                        <i class="icono-servicios"><img src="imagenes/icono_tarjetas_1.png" alt="Icono"></i>
                         <h3>Diseño Industrial</h3>
                     </div>
                     <p>Lorem ipsum dolor sit amet, ullamcorper elementum nibh ut aliquet.</p>
-                    <a href="html/servicios.html#di.ind" class="boton-vermas">Ver Más</a>
+                    <a href="html/servicios.html#di.ind" class="boton-bco">Ver Más</a>
                 </div>
                 <div class="tarjetas">
                     <div class="icono-titulo">
-                        <i class="icono-servicios"><img src="imagenes/icono_tarjetas.png" alt="Icono"></a></i>
+                        <i class="icono-servicios"><img src="imagenes/icono_tarjetas_2.png" alt="Icono"></i>
                         <h3>Diseño Gráfico</h3>
                     </div>
                     <p>Lorem ipsum dolor sit amet, ullamcorper elementum nibh ut aliquet.</p>
-                    <a href="html/servicios.html#di.graf" class="boton-vermas">Ver Más</a>
+                    <a href="html/servicios.html#di.graf" class="boton-bco">Ver Más</a>
                 </div>
                 <div class="tarjetas">
                     <div class="icono-titulo">
-                        <i class="icono-servicios"><img src="imagenes/icono_tarjetas.png" alt="Icono"></a></i>
+                        <i class="icono-servicios"><img src="imagenes/icono_tarjetas_3.png" alt="Icono"></i>
                         <h3>Diseño UX/UI</h3>
                     </div>
                     <p>Lorem ipsum dolor sit amet, ullamcorper elementum nibh ut aliquet.</p>
-                    <a href="html/servicios.html#di.ux-ui" class="boton-vermas">Ver Más</a>
+                    <a href="html/servicios.html#di.ux-ui" class="boton-bco">Ver Más</a>
                 </div>
                 <div class="tarjetas">
                     <div class="icono-titulo">
-                        <i class="icono-servicios"><img src="imagenes/icono_tarjetas.png" alt="Icono"></a></i>
+                        <i class="icono-servicios"><img src="imagenes/icono_tarjetas_4.png" alt="Icono"></i>
                         <h3>Desarrollo Web</h3>
                     </div>
                     <p>Lorem ipsum dolor sit amet, ullamcorper elementum nibh ut aliquet.</p>
-                    <a href="html/servicios.html#desarrollow" class="boton-vermas">Ver Más</a>
+                    <a href="html/servicios.html#desarrollow" class="boton-bco">Ver Más</a>
                 </div>
                 <div class="tarjetas">
                     <div class="icono-titulo">
-                        <i class="icono-servicios"><img src="imagenes/icono_tarjetas.png" alt="Icono"></a></i>
+                        <i class="icono-servicios"><img src="imagenes/icono_tarjetas_5.png" alt="Icono"></i>
                         <h3>Ilustración</h3>
                     </div>
                     <p>Lorem ipsum dolor sit amet, ullamcorper elementum nibh ut aliquet.</p>
-                    <a href="html/servicios.html#ilust" class="boton-vermas">Ver Más</a>
+                    <a href="html/servicios.html#ilust" class="boton-bco">Ver Más</a>
                 </div>
                 <div class="tarjetas">
                     <div class="icono-titulo">
-                        <i class="icono-servicios"><img src="imagenes/icono_tarjetas.png" alt="Icono"></a></i>
+                        <i class="icono-servicios"><img src="imagenes/icono_tarjetas_6.png" alt="Icono"></i>
                         <h3>Modelado 3D</h3>
                     </div>
                     <p>Lorem ipsum dolor sit amet, ullamcorper elementum nibh ut aliquet.</p>
-                    <a href="html/servicios.html#modelado" class="boton-vermas">Ver Más</a>
+                    <a href="html/servicios.html#modelado" class="boton-bco">Ver Más</a>
                 </div>
             </div>
-            <a href="html/servicios.html" class="boton-masinfo">Más información acá</a>
+            <div class="boton-mas-info">
+                <a href="html/servicios.html" class="boton-gris">Más información acá</a>
+            </div>
         </div>
     </section>
 
     <!-- Trabajos Recientes -->
 
-    <section class="trabajosrecientes-container">
-        <button class="prev">←</button>
-        <button class="next">→</button>
-        <div class="trabajos-recientes">
+    <section class="trabajos-recientes-container">
+        <div class="trabajos-recientes-texto">
             <h2>Trabajos Recientes</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper elementum nibh ut aliquet.
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper elementum nibh ut aliquet.
                 Aliquam accumsan, lectus sed elementum ornare, ex felis vehicula neque, nec porttitor dolor nunc sed
-                augue. Sed et neque scelerisque, imperdiet dui sed, auctor mauris. </p>
-            <div class="trabajos-miniaturas">
-                <div class="portfolio-item">
-                    <img src="imagenes/proyecto1.png" alt="Proyecto 1">
-                    <h5>Trabajo 1</h5>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                augue. Sed et neque scelerisque, imperdiet dui sed, auctor mauris.
+            </p>
+        </div>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="imagenes/proyecto1.png" class="card-img-top" alt="Portada proyecto 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Proyecto 1</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="imagenes/proyecto2.png" class="card-img-top" alt="Portada proyecto 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Proyecto 2</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="imagenes/proyecto3.png" class="card-img-top" alt="Portada proyecto 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Proyecto 3</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="imagenes/proyecto4.png" class="card-img-top" alt="Portada proyecto 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Proyecto 4</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="portfolio-item">
-                    <img src="imagenes/proyecto2.png" alt="Proyecto 2">
-                    <h5>Trabajo 2</h5>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="imagenes/proyecto9.png" class="card-img-top" alt="Portada proyecto 9">
+                                <div class="card-body">
+                                    <h5 class="card-title">Proyecto 9</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="imagenes/proyecto10.png" class="card-img-top" alt="Portada proyecto 10">
+                                <div class="card-body">
+                                    <h5 class="card-title">Proyecto 10</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="imagenes/proyecto11.png" class="card-img-top" alt="Portada proyecto 11">
+                                <div class="card-body">
+                                    <h5 class="card-title">Proyecto 11</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="imagenes/proyecto12.png" class="card-img-top" alt="Portada proyecto 12">
+                                <div class="card-body">
+                                    <h5 class="card-title">Proyecto 12</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="portfolio-item">
-                    <img src="imagenes/proyecto3.png" alt="Proyecto 3">
-                    <h5>Trabajo 3</h5>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="imagenes/proyecto4.png" alt="Proyecto 4">
-                    <h5>Trabajo 4</h5>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="imagenes/proyecto5.png" class="card-img-top" alt="Portada proyecto 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Proyecto 5</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="imagenes/proyecto6.png" class="card-img-top" alt="Portada proyecto 6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Proyecto 6</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="imagenes/proyecto7.png" class="card-img-top" alt="Portada proyecto 7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Proyecto 7</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="imagenes/proyecto8.png" class="card-img-top" alt="Portada proyecto 8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Proyecto 8</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <a href="html/portfolio.html">Ver el Portfolio completo</a></li>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <div class="ver-portfolio-completo">
+                <a href="html/portfolio.html" class="boton-bco">Ver Portfolio el completo</a>
+            </div>
         </div>
     </section>
 
@@ -200,7 +333,13 @@
                         <p>Mar del Plata, Buenos Aires, Argentina</p>
                     </div>
                 </div>
-                <a href="html/contacto.html">Contáctame</a></li>
+            </div>
+            <div class="boton-contactame">
+                <a href="html/contacto.html" class="boton-gris">Contáctame</a></li>
+            </div>
+            <div class="contacto-image">
+                <div class="image-overlay-der"></div>
+                <img src="imagenes/contacto.jpg" alt="Imagen de Contacto">
             </div>
         </div>
     </section>
@@ -209,9 +348,12 @@
 
     <footer>
         <div class="footer-container">
-            <div class="footer">
+            <div class="footer-">
                 <div class="footer-logo">
                     <img src="imagenes/logoheader.png" alt="Logo NG Diseño">
+                </div>
+                <div class="footer-logo-mobile">
+                    <img src="imagenes/logoheader_mobile.png" alt="Logo NG Diseño">
                 </div>
                 <p>©NG Diseño 2024. Todos los derechos reservados</p>
             </div>
@@ -230,14 +372,26 @@
                 <div class="columna-seguime">
                     <h5>Seguime</h5>
                     <ul>
-                        <li><i class="icono-instagram"><img src="imagenes/icono_instagram.png" alt="Icono Instagram"></i>
-                            <a href="https://www.instagram.com/ng_ilustrador" target="_blank">@ng_ilustrador</a>
+                        <li><a href="https://www.instagram.com/ng_ilustrador" target="_blank">
+                            <i class="icono-instagram">
+                                <img src="imagenes/icono_instagram.png"alt="Icono Instagram">
+                            </i>
+                            <span>@ng_ilustrador</span>
+                        </a>
                         </li>
-                        <li><i class="icono-linkedin"><img src="imagenes/icono_linkedin.png" alt="Icono Linkedin"></i>
-                            <a href="https://www.linkedin.com/in/nahuelguagliardo-ux-ui" target="_blank">@nahuelguagliardo-ux-ui</a>
+                        <li><a href="https://www.linkedin.com/in/nahuelguagliardo-ux-ui"target="_blank">
+                            <i class="icono-linkedin">
+                                <img src="imagenes/icono_linkedin.png" alt="Icono Linkedin">
+                            </i>
+                            <span>@nahuelguagliardo-ux-ui</span>
+                        </a>
                         </li>
-                        <li><i class="icono-behance"><img src="imagenes/icono_behance.png" alt="Icono Behance"></i>
-                            <a href="https://www.behance.net/nahuelguaglia" target="_blank">@nahuelguaglia</a>
+                        <li><a href="https://www.behance.net/nahuelguaglia"target="_blank">
+                            <i class="icono-behance">
+                                <img src="imagenes/icono_behance.png" alt="Icono Behance">
+                            </i>                            
+                            <span>@nahuelguaglia</span>
+                        </a>
                         </li>
                     </ul>
                 </div>
@@ -262,4 +416,9 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
 </body>
+
+</html>

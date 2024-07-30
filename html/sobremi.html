@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NG Diseño | Sobre Mi</title>
+    <title>NG-Diseño | Sobre Mi</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -17,6 +17,13 @@
             <div class="header-logo">
                 <img src="../imagenes/logoheader.png" alt="Logo NG Diseño">
             </div>
+            <div class="header-logo-mobile">
+                <img src="../imagenes/logoheader_mobile.png" alt="Logo NG Diseño">
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="header-hamburguesa">
+                <img src="../imagenes/icono_hamburguesa.png" alt="Icono Menú Hamburguesa">
+            </label>
             <nav>
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
@@ -33,9 +40,9 @@
 
     <section class="herosection-2-container">
         <div class="hero2container">
-            <div class="herosection-2">
+            <div class="hero-texto2">
                 <h1>Sobre Mí</h1>
-                <p class="hero-texto2">
+                <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper elementum nibh ut
                     aliquet.<br>
                     Aliquam accumsan, lectus sed elementum ornare, ex felis vehicula neque, nec porttitor dolor
@@ -45,8 +52,14 @@
                     nunc sed augue. Sed et neque scelerisque, imperdiet dui sed, auctor mauris. Sed euismod, diam ut
                     aliquam lacinia, augue sapien pulvinar neque.
                 <p>
-                    <a href="https://drive.google.com/file/d/1wmo2GwTbC3oxohOA-h8DrXLCOhfviKm1/view?usp=sharing"
-                        class="boton-descargamicv" target="_blank">Descargá mi CV</a>
+            </div>
+            <div class="boton-hero-2">
+                <a href="https://drive.google.com/file/d/1wmo2GwTbC3oxohOA-h8DrXLCOhfviKm1/view?usp=sharing"
+                    class="boton-gris" target="_blank">Descargá mi CV</a>
+            </div>
+            <div class="hero-image-2">
+                <div class="image-overlay-der-2"></div>
+                <img src="../imagenes/sobre_mi.jpg" alt="Imagen Sobre Mi">
             </div>
         </div>
     </section>
@@ -74,6 +87,10 @@
                     dolor.
                 </p>
             </div>
+            <div class="mi-camino-image">
+                <div class="image-overlay-izq-2"></div>
+                <img src="../imagenes/mi_camino.jpg" alt="Imagen mi camino en el diseño">
+            </div>
         </div>
     </section>
 
@@ -87,18 +104,26 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper elementum nibh ut
                     aliquet. Aliquam accumsan, lectus sed elementum ornare, ex felis vehicula neque.
                 </p>
+                <div class="instituciones">
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper elementum nibh
+                            ut
+                            aliquet</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper elementum nibh
+                            ut
+                            aliquet</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper elementum nibh
+                            ut
+                            aliquet</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper elementum nibh
+                            ut
+                            aliquet</li>
+                    </ol>
+                </div>
             </div>
-            <div class="instituciones">
-                <ol>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper elementum nibh ut
-                        aliquet</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper elementum nibh ut
-                        aliquet</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper elementum nibh ut
-                        aliquet</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper elementum nibh ut
-                        aliquet</li>
-                </ol>
+            <div class="educacion-image">
+                <div class="image-overlay-der-3"></div>
+                <img src="../imagenes/educacion.jpg" alt="Imagen Educación">
             </div>
         </div>
     </section>
@@ -107,9 +132,12 @@
 
     <footer>
         <div class="footer-container">
-            <div class="footer">
+            <div class="footer-">
                 <div class="footer-logo">
                     <img src="../imagenes/logoheader.png" alt="Logo NG Diseño">
+                </div>
+                <div class="footer-logo-mobile">
+                    <img src="../imagenes/logoheader_mobile.png" alt="Logo NG Diseño">
                 </div>
                 <p>©NG Diseño 2024. Todos los derechos reservados</p>
             </div>
@@ -128,17 +156,26 @@
                 <div class="columna-seguime">
                     <h5>Seguime</h5>
                     <ul>
-                        <li><i class="icono-instagram"><img src="../imagenes/icono_instagram.png"
-                                    alt="Icono Instagram"></i>
-                            <a href="https://www.instagram.com/ng_ilustrador" target="_blank">@ng_ilustrador</a>
+                        <li><a href="https://www.instagram.com/ng_ilustrador" target="_blank">
+                                <i class="icono-instagram">
+                                    <img src="../imagenes/icono_instagram.png" alt="Icono Instagram">
+                                </i>
+                                <span>@ng_ilustrador</span>
+                            </a>
                         </li>
-                        <li><i class="icono-linkedin"><img src="../imagenes/icono_linkedin.png"
-                                    alt="Icono Linkedin"></i>
-                            <a href="https://www.linkedin.com/in/nahuelguagliardo-ux-ui"
-                                target="_blank">@nahuelguagliardo-ux-ui</a>
+                        <li><a href="https://www.linkedin.com/in/nahuelguagliardo-ux-ui" target="_blank">
+                                <i class="icono-linkedin">
+                                    <img src="../imagenes/icono_linkedin.png" alt="Icono Linkedin">
+                                </i>
+                                <span>@nahuelguagliardo-ux-ui</span>
+                            </a>
                         </li>
-                        <li><i class="icono-behance"><img src="../imagenes/icono_behance.png" alt="Icono Behance"></i>
-                            <a href="https://www.behance.net/nahuelguaglia" target="_blank">@nahuelguaglia</a>
+                        <li><a href="https://www.behance.net/nahuelguaglia" target="_blank">
+                                <i class="icono-behance">
+                                    <img src="../imagenes/icono_behance.png" alt="Icono Behance">
+                                </i>
+                                <span>@nahuelguaglia</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
