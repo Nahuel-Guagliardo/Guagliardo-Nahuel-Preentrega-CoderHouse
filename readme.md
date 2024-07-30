@@ -1,5 +1,7 @@
 Guagliardo Nahuel Preentregable 2 | Desarrollo-web-flex - comision  61930
 
+Link Deploy: https://nahuel-guagliardo.github.io/Guagliardo-Nahuel-Preentrega-CoderHouse/index.html
+
 Mejoras de la Versión 2 Preentregable : 
 
 Buenas tardes, dejo este leeme como información del progreso para la Preentrega. 
