@@ -1,0 +1,111 @@
+// Estilo de Tarjetas Portfolio Desktop
+
+.portfolio-section {
+    padding: 5% 10%;
+
+    .portfolio-grid {
+        @include dimension (100%, auto);
+        @include box-sizing;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(21.25rem, 1fr));
+        gap: 2rem;
+
+        .portfolio-tarjeta {
+            @include flex-center(column, center, center);
+            @include box-shadow(8px, 8px, 16px, 0px, $color-gris-oscuro);
+            @include box-sizing;
+            width: 100%;
+            height: auto;
+            background-color: $color-blanco;
+            border: 1px solid $color-gris;
+            border-radius: 0.5rem;
+            overflow: hidden;
+
+            .portfolio-image {
+                @include dimension(100%, 15rem);
+                position: $rel;
+                flex: 0 0 auto;
+
+
+                img {
+                    @include dimension(100%, 100%);
+                    object-fit: cover;
+                    position: $abs;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+
+        .project-info {
+            @include flex-center(column, center, center);
+            padding: 3rem;
+            flex: 1;
+
+            h5 {
+                margin-bottom: 1.375rem;
+            }
+
+            p {
+                line-height: 1.5;
+                margin-bottom: 3rem;
+                text-align: $cen;
+            }
+
+            .boton-gris {
+                @include box-sizing;
+            }
+        }
+    }
+}
+
+// Media Querys Tableta
+
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+
+    .portfolio-section {
+        padding: 0 5%;
+
+        .portfolio-grid {
+            grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+
+            .project-info {
+
+                p {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+}
+
+// Media Querys Mobile
+
+@media only screen and (max-width:500px) {
+
+    .portfolio-section {
+        padding: 0 5%;
+
+        .portfolio-grid {
+            grid-template-columns: 1fr;
+
+            .portfolio-tarjeta {
+                width: auto;
+
+                .project-info {
+                    padding: 1.5rem;
+
+                    h5 {
+                        margin-bottom: 0.5rem;
+                        text-align: $cen;
+                    }
+
+                    p {
+                        margin-bottom: 1rem;
+                        text-align: $cen;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,163 @@
+/*Estilo de Sobre Mi / Mi camino en el diseño / Desktop*/
+
+.mi-camino-container {
+    @include dimension (100%, auto);
+    @include flex-center (column, center, center);
+    @include box-sizing;
+    background-color: $color-gris;
+    position: $rel;
+
+    .mi-camino {
+        @include dimension (100%, 100%);
+        display: flex;
+
+        .mi-camino-texto {
+            @include dimension (35%, auto);
+            @include flex-center (column, flex-start, flex-start);
+            margin-left: 55%;
+            margin-top: 5%;
+            position: $rel;
+            z-index: 2;
+
+            h2 {
+                margin: 0;
+                margin-bottom: 2.05rem;
+            }
+
+            p {
+                margin: 0 0 2rem 0;
+                line-height: 1.5;
+                margin-bottom: 4rem;
+            }
+        }
+
+        .mi-camino-image {
+            @include dimension (50%, 100%);
+            order: -1;
+            position: $abs;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            overflow: hidden;
+
+            img {
+                @include dimension (auto, 100%);
+                object-position: left;
+                object-fit: cover;
+            }
+
+            .image-overlay-izq-2 {
+                @include dimension (100%, 100%);
+                position: $abs;
+                top: 0;
+                right: 0;
+                @include gradient(to left,
+                    rgba(217, 217, 217, 1) 0%,
+                    rgba(217, 217, 217, 0) 50%);
+                z-index: 2;
+            }
+        }
+    }
+}
+
+// Media Querys Tableta
+
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+
+    .mi-camino-container {
+        height: auto;
+
+        .mi-camino {
+            @include flex-center (column, center, center);
+            width: 100%;
+
+            .mi-camino-texto {
+                @include flex-center (column, center, center);
+                margin: 3rem 0 0 0;
+                padding: 0 5%;
+                width: auto;
+                padding-bottom: 3rem;
+
+
+                h2 {
+                    text-align: $cen;
+                }
+
+                p {
+                    text-align: $cen;
+                    line-height: 1.5;
+                    margin: 0 0 1.5rem 0;
+                }
+
+                p:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+
+            .mi-camino-image {
+                @include dimension (100%, 28rem);
+                @include flex-center (column, flex-start, flex-start);
+                order: -1;
+                position: $rel;
+                left: 0;
+                top: 0;
+
+                img {
+                    @include dimension (auto, 100%);
+                    object-position: left;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+// Media Querys Mobile
+
+@media only screen and (max-width:500px) {
+
+    .mi-camino-container {
+        height: auto;
+
+        .mi-camino {
+            @include flex-center (column, center, center);
+            width: 100%;
+
+            .mi-camino-texto {
+                @include flex-center (column, center, center);
+                @include dimension(100%, auto);
+                margin: 3rem 0 0 0rem;
+                padding: 0 5%;
+
+                h2 {
+                    text-align: $cen;
+                }
+
+                p {
+                    text-align: $cen;
+                    line-height: 1.5;
+                    margin: 0 0 2rem 0;
+                }
+            }
+
+            .mi-camino-image {
+                @include dimension(100%, 28rem);
+                @include flex-center (column, flex-start, flex-start);
+                order: -1;
+                left:0;
+                position: $rel;
+                top: 0;
+
+                img {
+                    @include dimension(auto, 100%);
+                    object-position: left;
+                    object-fit: cover;
+                }
+
+                .image-overlay-izq-2 {
+                    @include ocultar;
+                }
+            }
+        }
+    }
+}

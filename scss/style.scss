@@ -1,0 +1,31 @@
+@import "base/reset";
+@import "base/tipografia";
+@import "base/mixins";
+
+@import "components/header";
+@import "components/footer";
+@import "components/botones";
+@import "components/tarjetas-servicios";
+@import "components/tarjetas-portfolio";
+@import "components/filtros-portfolio";
+
+@import "layouts/inicio/herosection-inicio";
+@import "layouts/inicio/acerca-inicio.scss";
+@import "layouts/inicio/servicios-inicio";
+@import "layouts/inicio/trabajos-recientes";
+@import "layouts/inicio/contacto-inicio";
+
+@import "layouts/contacto/hero-contacto";
+@import "layouts/contacto/formulario";
+@import "layouts/contacto/preguntas-frecuentes";
+
+@import "layouts/sobremi/hero-sobremi";
+@import "layouts/sobremi/micamino";
+@import "layouts/sobremi/educacion";
+@import "layouts/sobremi/habilidades";
+
+@import "layouts/servicios/hero-servicios";
+@import "layouts/servicios/section-servicios-der";
+@import "layouts/servicios/section-servicios-izq";
+
+@import "utilities/variables";

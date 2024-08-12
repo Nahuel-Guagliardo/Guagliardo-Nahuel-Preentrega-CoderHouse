@@ -1,0 +1,199 @@
+// Estilo de Servicios/ Contacto / Desktop
+
+.servicios-izq-container {
+    @include dimension (100%, 37.5rem);
+    @include flex-center (row, center, center);
+    @include box-sizing;
+    background-color: $color-blanco;
+    position: $rel;
+
+    .servicios-izq {
+        @include dimension (100%, 100%);
+        display: flex;
+        position: $rel;
+
+        .servicios-izq-texto {
+            @include dimension (35%, auto);
+            @include flex-center (column, flex-start, flex-start);
+            margin-left: 10%;
+            margin-top: 5%;
+            position: $rel;
+            z-index: 2;
+
+            h2 {
+                margin: 0 0 2rem 0;
+            }
+
+            p {
+                line-height: 1.5;
+                margin-bottom: 1rem;
+            }
+
+        }
+
+        .servicios-izq-boton {
+            margin-left: 10%;
+            position: $abs;
+            bottom: 10%;
+            left: 0;
+            z-index: 3;
+        }
+
+        .section-izq-image {
+            @include dimension (50%, 100%);
+            order: -1;
+            position: $abs;
+            right: 0;
+            top: 0;
+            overflow: hidden;
+            z-index: 1;
+
+            img {
+                @include dimension (auto, 100%);
+                object-fit: cover;
+                position: $abs;
+                right: 0;
+            }
+
+            .image-overlay-der-serv {
+                @include dimension (100%, 100%);
+                @include gradient(to right,
+                    rgb(255, 255, 255) 0%,
+                    rgba(217, 217, 217, 0) 25%);
+                position: $abs;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+        }
+    }
+}
+
+// Media Querys Tableta
+
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+
+    .servicios-izq-container {
+        @include dimension (100%, auto);
+
+        .servicios-izq {
+            @include flex-center (column, center, center);
+            width: 100%;
+
+            .servicios-izq-texto {
+                @include flex-center (column, center, center);
+                margin: 3rem 0 0 0;
+                padding: 0 5%;
+                width: auto;
+
+                h2 {
+                    text-align: $cen;
+                }
+
+                p {
+                    text-align: $cen;
+                    line-height: 1.5;
+                    margin: 0 0 1.5rem 0;
+                }
+
+                &:last-of-type {
+                    margin-bottom: 1.5rem;
+                }
+            }
+
+            .servicios-izq-boton {
+                @include flex-center (column, center, center);
+                position: $rel;
+                margin: 2rem 0;
+
+                a {
+                    margin: 5% 0 8% 0;
+                    white-space: nowrap;
+                }
+            }
+
+            .section-izq-image {
+                @include dimension (100%, 28rem);
+                @include flex-center (column, end, end);
+                order: -1;
+                position: $rel;
+                top: 0;
+
+                img {
+                    width: auto;
+                    object-fit: cover;
+                    right: 0;
+                }
+
+                .image-overlay-der-serv {
+                    @include ocultar;
+                }
+            }
+        }
+    }
+}
+
+// Media Querys Mobile
+
+@media only screen and (max-width:500px) {
+
+    .servicios-izq-container {
+        height: auto;
+
+        .servicios-izq {
+            @include flex-center (column, center, center);
+            width: 100%;
+
+            .servicios-izq-texto {
+                @include flex-center (column, center, center);
+                margin: 3rem 0 0 0;
+                width: auto;
+                padding: 0 5%;
+
+                h2 {
+                    text-align: $cen;
+                }
+
+                p {
+                    text-align: $cen;
+                    line-height: 1.5;
+                    margin: 0 0 1.5rem 0;
+                }
+
+                &:last-of-type {
+                    margin-bottom: 2rem;
+                }
+            }
+
+            .servicios-izq-boton {
+                @include flex-center (column, center, center);
+                white-space: nowrap;
+                text-align: $cen;
+                margin: 0 0 3rem 0;
+                position: $rel;
+
+                a {
+                    margin: 5% 0;
+                    white-space: nowrap;
+                }
+            }
+
+            .section-izq-image {
+                @include dimension (100%, 28rem);
+                @include flex-center (column, end, end);
+                order: -1;
+                position: $rel;
+                top: 0;
+
+                img {
+                    width: auto;
+                    object-fit: cover;
+                }
+
+                .image-overlay-der-serv {
+                    @include ocultar;
+                }
+            }
+        }
+    }
+}

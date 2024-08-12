@@ -1,0 +1,146 @@
+// Header
+
+@import '../utilities/variables';
+
+header {
+    width: 100%;
+    background-color: $color-gris;
+    height: 5rem;
+    @include flex-center (space-between, center);
+    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    @include box-shadow(0, 0.1rem, 0.5rem, 0px, $color-gris-oscuro);
+
+    .header-container {
+        @include flex-center(row, space-between, center);
+        width: 100%;
+    }
+
+    nav {
+        @include flex-center;
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            width: auto;
+            @include flex-center;
+
+            li {
+                white-space: nowrap;
+                margin-right: 1.625rem;
+                @include flex-center;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    width: 100%;
+                    text-align: $cen;
+                    text-decoration: none;
+                    color: $color-negro;
+                    font-family: 'roboto_medium';
+                    font-size: 1rem;
+                    @include flex-center;
+
+                    &:hover {
+                        color: $color-gris-oscuro;
+                    }
+
+                    &.active {
+                        font-family: 'roboto_bold';
+                        font-size: 1.125rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .menu-toggle {
+        @include ocultar;
+    }
+}
+
+// Media Queries Tablet
+
+@media only screen and (min-width: 961px) {
+
+    .header-logo-mobile,
+    .header-hamburguesa {
+        @include ocultar;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    header nav ul li {
+        margin-right: 0.9375rem;
+    }
+
+    header nav ul li a {
+        font-size: 0.875rem;
+    }
+
+    .active {
+        font-size: 1rem;
+    }
+
+    .header-logo,
+    .header-hamburguesa {
+        @include ocultar;
+    }
+}
+
+// Media Queries Mobile
+
+@media only screen and (max-width: 500px) {
+    .header-logo {
+        @include ocultar;
+    }
+
+    header nav {
+        @include box-shadow(0, 0.2rem, 0.5rem, 0px, $color-gris-oscuro);
+        display: none;
+        flex-direction: column;
+        position: $abs;
+        align-items: $cen;
+        top: 5rem;
+        left: 0;
+        width: 100%;
+        background-color: $color-gris;
+        z-index: 15;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            flex-direction: column;
+            align-items: $cen;
+            width: 80%;
+
+            li {
+                margin: 0;
+                align-items: $cen;
+                width: 100%;
+                padding: 5% 0;
+                border-bottom: 1.5px solid #ccc;
+                @include flex-center;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+
+    .menu-toggle:checked~nav {
+        display: flex;        
+    }
+}

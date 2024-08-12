@@ -1,0 +1,51 @@
+// Estilo del Index / Sección Trabajos Recientes
+
+.trabajos-recientes-container {
+    @include dimension (100%, auto);
+    @include box-sizing;
+    background-color: $color-gris;
+    overflow: hidden;
+    text-align: $cen;
+
+    .trabajos-recientes-texto {
+        padding: 0 10%;
+        position: $rel;
+        margin-top: 5.25rem;
+
+        h2 {
+            margin-top: 5rem;
+        }
+
+        p {
+            width: 100%;
+            margin: 2rem 0 3.5rem 0;
+            line-height: 1.5;
+        }
+    }
+
+    .carousel-inner {
+        padding: 0 10%;
+
+        .card {
+            @include flex-center (column, center, center);
+            @include box-sizing;
+            background-color: $color-gris;
+            border: none;
+            text-align: $cen;
+        }
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 10%;
+        filter: invert(100%);
+
+        icon {
+            border: none;
+        }
+    }
+
+    .ver-portfolio-completo {
+        margin: 3.5rem 0;
+    }
+}

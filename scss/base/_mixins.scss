@@ -1,0 +1,51 @@
+// Ocultar
+
+@mixin ocultar {
+    display: none;
+}
+
+// Botones General
+
+@mixin boton-base {
+    text-decoration: none;
+    font-family: 'roboto_medium';
+    font-size: 1.125rem; 
+    padding: 0.625rem 1.5rem; 
+    border-radius: 0.5rem; 
+    cursor: $poi;
+    box-sizing: border-box;
+}
+
+// Display Center
+
+@mixin flex-center($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// Dimensiones
+
+@mixin dimension($width: auto, $height: auto) {
+    width: $width;
+    height: $height;
+}
+
+// Box-Sizing
+
+@mixin box-sizing {
+    box-sizing: border-box;
+}
+
+// Box-Shadow
+
+@mixin box-shadow($horizontal: 0, $vertical: 0, $blur: 0, $spread: 0, $color:$color-gris) {
+    box-shadow: $horizontal $vertical $blur $spread $color;
+}
+
+// Gradientes lineales
+
+@mixin gradient($direction, $colors...) {
+    background: linear-gradient($direction, $colors...);
+}

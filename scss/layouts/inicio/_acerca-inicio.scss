@@ -1,0 +1,193 @@
+// Estilo del Index / Acerca de Mi / Desktop
+
+.acerca-mi-container {
+    @include dimension (100%, 37.5rem);
+    @include flex-center (row, center, center);
+    @include box-sizing;
+    background-color: $color-gris;
+    position: $rel;
+
+    .acerca-mi {
+        @include dimension (100%, 100%);
+        display: flex;
+
+        .acerca-texto {
+            @include dimension (35%, auto);
+            @include flex-center (column, flex-start, flex-start);
+            margin-left: 55%;
+            margin-top: 5%;
+            position: $rel;
+            z-index: 2;
+
+            h2 {
+                margin: 0;
+                margin-bottom: 2.05rem;
+            }
+
+            p {
+                margin: 0 0 1rem 0;
+                line-height: 1.5;
+            }
+        }
+
+        .boton-container {
+            margin-right: 10%;
+            position: $abs;
+            bottom: 10%;
+            right: 0;
+            text-align: right;
+            z-index: 3;
+            
+            a {
+                margin-top: 15%;
+            }
+        }
+
+        .acerca-image {
+            @include dimension (50%, 100%);
+            order: -1;
+            position: $abs;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            overflow: hidden;
+
+            img {
+                @include dimension (auto, 100%);
+                object-fit: cover;
+            }
+
+            .image-overlay-izq {
+                @include dimension (100%, 100%);
+                @include gradient(to left,
+                    rgba(217, 217, 217, 1) 0%,
+                    rgba(217, 217, 217, 0) 50%);
+                position: $abs;
+                top: 0;
+                right: 0;
+                z-index: 2;
+            }
+        }
+    }
+}
+
+// Media Querys Tableta
+
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+
+    .acerca-mi-container {
+        height: auto;
+
+        .acerca-mi {
+            @include flex-center (column, center, center);
+            width: 100%;
+
+            .acerca-texto {
+                @include flex-center (column, center, center);
+                margin: 3rem 2rem 0 2rem;
+                padding: 0 5%;
+                width: auto;
+
+                h2 {
+                    text-align: $cen;
+                }
+
+                p {
+                    text-align: $cen;
+                    line-height: 1.5;
+                    margin: 0 0 1.5rem 0;
+                }
+
+                p:last-of-type {
+                    margin-bottom: 0;
+                }
+
+            }
+
+            .boton-container {
+                @include flex-center (column, center, center);
+                position: $rel;
+                margin: 2rem 0;
+
+                a {
+                    margin: 5% 0 8% 0;
+                    white-space: nowrap;
+                }
+            }
+
+            .acerca-image {
+                @include dimension (100%, 28rem);
+                @include flex-center (column, end, end);
+                order: -1;
+                position: $rel;
+                top: 0;
+
+                img {
+                    width: auto;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+// Media Querys Mobile
+
+@media only screen and (max-width:500px) {
+
+    .acerca-mi-container {
+        height: auto;
+
+        .acerca-mi {
+            @include flex-center (column, center, center);
+            width: 100%;
+
+            .acerca-texto {
+                @include flex-center (column, center, center);
+                margin: 3rem 1rem 0 1rem;
+                width: auto;
+                padding: 0 5%;
+
+                h2 {
+                    text-align: $cen;
+                }
+
+                p {
+                    text-align: $cen;
+                    line-height: 1.5;
+                    margin: 0 0 1.5rem 0;
+                }
+            }
+
+            .boton-container {
+                @include flex-center (column, center, center);
+                white-space: nowrap;
+                text-align: $cen;
+                margin: 0 0 3rem 0;
+                position: $rel;
+                
+                a {
+                    margin: 5% 0;
+                    white-space: nowrap;
+                }
+            }
+
+            .acerca-image {
+                @include dimension (100%, 28rem);
+                @include flex-center (column, end, end);
+                order: -1;
+                position: $rel;
+                top: 0;
+
+                .img {
+                    width: auto;
+                    object-fit: cover;
+                }
+
+                .image-overlay-izq {
+                    @include ocultar;
+                }
+            }
+        }
+    }
+}

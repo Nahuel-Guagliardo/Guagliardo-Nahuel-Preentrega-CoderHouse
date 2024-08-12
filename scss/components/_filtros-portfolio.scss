@@ -1,0 +1,97 @@
+// Estilo de Filtros Portfolio Desktop
+
+.portfolio-filtros-container {
+    .menu-mobile {
+        @include ocultar;
+    }
+
+    .portfolio-filtros {
+        @include flex-center(column, center, center);
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        background-color: $color-gris;
+        border-radius: 0.5rem;
+        gap: 1rem;
+        margin-bottom: 5%;
+        z-index: 3;
+
+        a {
+            @include flex-center(column, center, center);
+            @include boton-base;
+            height: 100%;
+            background-color: $color-gris;
+            color: $color-negro;
+            text-align: $cen;
+
+            &.active {
+                background-color: $color-gris-oscuro;
+                color: $color-blanco;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    .portfolio-filtros-container {
+        @include flex-center(column, center, center);
+        background-color: $color-gris;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        margin-bottom: 5%;
+        position: $rel;
+
+        .menu-mobile {
+            display: block;
+            z-index: 5;
+
+            .filtros-toggle {
+                @include ocultar;
+            }
+
+            .filtros-hamburguesa {
+                @include flex-center (row, center, center);
+                @include boton-base;
+                cursor: $poi;
+                background-color: $color-gris;
+                color: $color-negro;
+                position: $rel;
+                width: 100%;
+                text-align: $cen;
+
+                .arrow-down {
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+
+        .portfolio-filtros {
+            @include ocultar;
+            position: $abs;
+            top: 100%;
+            left: 0;
+            background-color: $color-gris;
+            width: 100%;
+            border-radius: 0.5rem;
+            box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+            z-index: 10;
+
+            a {
+                display: block;
+                padding: 1rem;
+                text-align: $cen;
+                color: $color-negro;
+                text-decoration: none;
+
+                &.active {
+                    background-color: $color-gris-oscuro;
+                    color: $color-blanco;
+                }
+            }
+        }
+
+        #filtros-toggle:checked~.portfolio-filtros {
+            @include ocultar;
+        }
+    }
+}

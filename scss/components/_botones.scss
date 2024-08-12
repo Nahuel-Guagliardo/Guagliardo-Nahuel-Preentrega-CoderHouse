@@ -1,0 +1,43 @@
+// Estilo de los botones
+
+.boton-gris {
+    @include boton-base;
+    background-color: $color-gris;
+    color: $color-negro;
+
+    &:hover {
+        background-color: $color-gris-oscuro;
+    }
+}
+
+.boton-bco {
+    @include boton-base;
+    background-color: $color-blanco;
+    color: $color-negro;
+
+    &:hover {
+        background-color: $color-gris-oscuro;
+    }
+}
+
+.boton-borde-gris {
+    @include boton-base;
+    border: solid 0.125rem $color-gris;
+    background-color: $color-blanco;
+    color: $color-negro;
+
+    &:hover {
+        background-color: $color-gris;
+        border-color: $color-gris;
+    }
+}
+
+// Media Query Mobile
+
+@media only screen and (max-width: 500px) {
+    .boton-gris, .boton-bco, .boton-borde-gris {
+        font-size: 1rem; 
+        padding: 0.4rem 0.8rem; 
+        border-radius: 0.25rem;
+    }
+}

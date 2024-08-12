@@ -1,0 +1,60 @@
+// Estilo del Index / Sección Servicios / Tarjetas
+
+.tarjetas {
+    @include flex-center (column, space-between, center);
+    @include box-shadow(8px, 8px, 16px, 0px, $color-gris-oscuro);
+    @include box-sizing;
+    height: auto;
+    background-color: $color-gris;
+    border-radius: 1.2rem;
+    padding: 2rem;
+
+    .icono-titulo {
+        @include flex-center (row, center, center);
+        margin-bottom: 2rem;
+
+        .icono-servicios {
+            img {
+                margin-right: 1.15rem;
+            }
+        }
+
+        h3 {
+            margin: 0;
+            text-align: $cen;
+        }
+
+    }
+
+    p {
+        width: 100%;
+        line-height: 1.5;
+        text-align: $cen;
+        margin: 0 0 2rem 0 !important;
+    }
+}
+
+// Media Querys Mobile
+
+@media only screen and (max-width: 501px) {
+    .tarjetas {
+        padding: 1.5rem;
+        width: 100%;
+
+        .icono-titulo {
+            @include flex-center (column, center, center);
+            margin-bottom: 1.5rem;
+
+            .icono-servicios {
+                img {
+                    margin-right: 0;
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+
+        .tarjetas p {
+            width: auto;
+        }
+    }
+}

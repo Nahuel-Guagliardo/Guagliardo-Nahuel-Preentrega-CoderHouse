@@ -1,0 +1,199 @@
+// Estilo de Servicios / Secciones Lado Derecho / Desktop
+
+.servicios-der-container {
+    @include dimension (100%, 37.5rem);
+    @include flex-center (row, center, center);
+    @include box-sizing;
+    background-color: $color-gris;
+    position: $rel;
+
+    .servicios-der {
+        @include dimension (100%, 100%);
+        display: flex;
+        position: $rel;
+
+        .servicios-der-texto {
+            @include dimension (35%, auto);
+            @include flex-center (column, flex-start, flex-start);
+            margin-left: 55%;
+            margin-top: 5%;
+            position: $rel;
+            z-index: 2;
+
+            h2 {
+                margin: 0 0 2rem 0;
+            }
+
+            p {
+                line-height: 1.5;
+                margin-bottom: 1rem;
+
+            }
+        }
+
+        .servicios-der-boton {
+            margin-right: 10%;
+            position: $abs;
+            bottom: 10%;
+            right: 0;
+            text-align: right;
+            z-index: 3;
+
+            a {
+                margin-top: 15%;
+            }
+        }
+
+        .section-der-image {
+            @include dimension (50%, 100%);
+            order: -1;
+            position: $abs;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            overflow: hidden;
+
+            img {
+                @include dimension (auto, 100%);
+                object-fit: cover;
+            }
+
+            .image-overlay-izq-serv {
+                @include dimension (100%, 100%);
+                @include gradient(to left,
+                    rgba(217, 217, 217, 1) 0%,
+                    rgba(217, 217, 217, 0) 50%);
+                position: $abs;
+                top: 0;
+                right: 0;
+                z-index: 2;
+            }
+        }
+    }
+}
+
+// Media Querys Tableta
+
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+
+    .servicios-der-container {
+        @include dimension (100%, auto);
+
+        .servicios-der {
+            @include flex-center (column, center, center);
+            width: 100%;
+
+            .servicios-der-texto {
+                @include flex-center (column, center, center);
+                margin: 3rem 0 0 0;
+                padding: 0 5%;
+                width: auto;
+
+                h2 {
+                    text-align: $cen;
+                }
+
+                p {
+                    text-align: $cen;
+                    line-height: 1.5;
+                    margin: 0 0 1.5rem 0;
+                }
+
+                &:last-of-type {
+                    margin-bottom: 1.5rem;
+                }
+            }
+
+            .servicios-der-boton {
+                @include flex-center (column, center, center);
+                position: $rel;
+                margin: 2rem 0;
+
+                a {
+                    margin: 5% 0 8% 0;
+                    white-space: nowrap;
+                }
+            }
+
+            .section-der-image {
+                @include dimension (100%, 28rem);
+                @include flex-center (column, flex-start, flex-start);
+                order: -1;
+                position: $rel;
+                top: 0;
+
+                img {
+                    width: auto;
+                    object-fit: cover;
+                    left: 0;
+                }
+
+                .image-overlay-izq-serv {
+                    @include ocultar;
+                }
+            }
+        }
+    }
+}
+
+// Media Querys Mobile
+
+@media only screen and (max-width:500px) {
+
+    .servicios-der-container {
+        height: auto;
+
+        .servicios-der {
+            @include flex-center (column, center, center);
+            width: 100%;
+
+            .servicios-der-texto {
+                @include flex-center (column, center, center);
+                margin: 3rem 0 0 0;
+                width: auto;
+                padding: 0 5%;
+
+                h2 {
+                    text-align: $cen;
+                }
+
+                p {
+                    text-align: $cen;
+                    line-height: 1.5;
+                    margin: 0 0 1.5rem 0;
+                }
+
+            }
+
+            .servicios-der-boton {
+                @include flex-center (column, center, center);
+                white-space: nowrap;
+                text-align: $cen;
+                margin: 0 0 3rem 0;
+                position: $rel;
+
+                a {
+                    margin: 5% 0;
+                    white-space: nowrap;
+                }
+            }
+
+            .section-der-image {
+                @include dimension (100%, 28rem);
+                @include flex-center (column, flex-start, flex-start);
+                order: -1;
+                position: $rel;
+                top: 0;
+
+                img {
+                    width: auto;
+                    object-fit: cover;
+                }
+
+                .image-overlay-izq-serv {
+                    @include ocultar;
+                }
+            }
+        }
+    }
+}

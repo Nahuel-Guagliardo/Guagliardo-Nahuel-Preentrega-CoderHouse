@@ -1,0 +1,411 @@
+// Footer
+
+footer {
+    @include flex-center(column, space-between, center);
+    @include dimension (auto,auto);
+    background-color: $color-gris;
+    @include box-sizing;
+    padding: 3% 10%;
+    position: $rel;
+
+    .footer-container {
+        @include dimension(100%, 100%);
+        @include box-sizing;
+        @include flex-center(column, space-between, flex-start);
+
+        .footer- {
+            @include dimension(100%, auto);
+            @include flex-center(row, space-between, center);
+            position: $rel;
+            margin-bottom: 2rem;
+
+            .footer-logo {
+                @include flex-center(center, center);
+                flex-direction: column;
+                text-align: $cen;
+            }
+
+            .footer-logo-mobile {
+                @include ocultar;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+
+        hr {
+            @include dimension (100%, 0.12rem);
+            background-color: $color-blanco;
+            border: none;
+            margin: 0 auto;
+        }
+
+        .footer-contenido {
+            @include flex-center(row, space-between, flex-start);
+            width: 100%;
+            margin-top: 3rem;
+
+            .columna-navegacion,
+            .columna-seguime,
+            .columna-contacto {
+                @include flex-center(column, space-between, flex-start);
+
+                h5 {
+                    margin: 0 0 2rem 0;
+                }
+
+                ul {
+                    font-family: "roboto_regular";
+                    font-size: 1rem;
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        @include flex-center(row, flex-start, flex-start);
+                        margin-bottom: 1.6rem;
+
+                        &.last-child {
+                            margin-right: 0;
+                        }
+
+                        a {
+                            @include flex-center(row, center, center);
+                            text-decoration: none;
+                            color: $color-negro;
+
+                            &.active {
+                                color: $color-gris-oscuro;
+                                font-family: "roboto_bold";
+                                font-size: 1.125rem;
+                            }
+
+                            &:hover {
+                                color: $color-gris-oscuro;
+                            }
+
+                            img {
+                                @include dimension;
+                                max-width: 1.125rem;
+                                max-height: 1.125rem;
+                            }
+                        }
+
+                        span {
+                            margin-left: 0.5rem;
+                            text-align: left;
+                        }
+
+                        i {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+
+            .columna-navegacion {
+                @include flex-center(column, center, flex-start);
+                margin-bottom: 3rem;
+            }
+
+            .columna-seguime {
+                @include flex-center(column, flex-start, flex-start);
+                z-index: 1;
+                margin: 0;
+                padding: 0;
+            }
+
+            .columna-contacto {
+                @include flex-center(column, center, flex-start);
+                text-align: $cen;
+                margin-right: 0;
+            }
+        }
+
+        .footer-terminos {
+            @include dimension(100%, 5rem);
+            background-color: $color-blanco;
+            @include flex-center(row, flex-end, center);
+            padding-right: 10%;
+            @include box-sizing;
+            position: $abs;
+            bottom: 0;
+            left: 0;
+            margin-top: auto;
+        }
+
+        .terminos {
+            margin: 0;
+        }
+    }
+}
+
+// Media Queries Tablet
+
+@media only screen and (min-width: 551px) and (max-width: 960px) {
+
+    footer {
+        padding: 3% 5%;
+
+        .footer-container {
+            .footer- {
+                margin-bottom: 1.5rem;
+
+                .footer-logo {
+                    @include ocultar;
+                }
+
+                .footer-logo-mobile {
+                    @include flex-center(center, center);
+
+                    p {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+
+        .footer-contenido {
+
+            .columna-navegacion,
+            .columna-seguime,
+            .columna-contacto {
+                margin-right: 1rem;
+
+                h5 {
+                    font-size: 1rem;
+                }
+
+                ul {
+                    font-size: 0.8rem;
+                    margin: 0;
+
+                    .active {
+                        font-size: 1rem;
+                    }
+
+                    li {
+                        margin-right: 1rem;
+                        img {
+                            max-width: 0.9rem;
+                            max-height: 0.9rem;
+                        }
+
+                        a,
+                        span,
+                        i {
+                            margin-right: 0rem;
+                        }
+
+                        a {
+                            margin-left: 0.2rem;
+                        }
+                    }
+                }
+            }
+
+            .footer-terminos {
+                height: 4rem;
+            }
+        }
+    }
+}
+
+// Media Queries Mobile
+
+@media only screen and (max-width: 550px) {
+
+    footer {
+        padding: 0;
+
+        .footer-container {
+            height: auto;
+
+            .footer- {
+                padding: 3% 5%;
+                margin-bottom: 0;
+
+                .footer-logo {
+                    @include ocultar;
+                }
+
+                .footer-logo-mobile {
+                    @include flex-center(center, center);
+
+                    img {
+                        max-width: 2.5rem;
+                        max-height: 2.5rem;
+                    }
+                }
+
+                p {
+                    font-size: 0.8rem;
+                    max-width: 70%;
+                }
+            }
+
+            .footer-contenido {
+                @include flex-center(column, center, center);
+                margin-top: 2rem;
+
+                .columna-navegacion {
+                    @include flex-center(column, center, center);
+                    order: 1;
+                    margin-bottom: 1rem;
+
+                    h5 {
+                        margin-bottom: 1.5rem;
+                    }
+
+                    ul {
+                        @include flex-center(column, center, center);
+                        text-align: $cen;
+                        font-size: 0.8rem;
+
+                        li {
+                            @include flex-center(column, center, center);
+                            justify-content: $cen;
+                            text-align: $cen;
+                            margin-bottom: 1rem;
+
+                            a {
+                                @include flex-center(center, center);
+
+                                &.active {
+                                    font-size: 0.9rem;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .columna-contacto {
+                    order: 2;
+                    @include flex-center(column, center, center);
+                    text-align: $cen;
+
+                    h5 {
+                        margin-bottom: 1.5rem;
+                    }
+
+                    ul {
+                        @include flex-center(column, center, center);
+
+                        li {
+                            @include flex-center(row, center, center);
+                            margin-bottom: 1rem;
+
+                            i {
+                                img {
+                                    @include dimension (0.8rem, auto);
+                                }
+                            }
+
+                            span {
+                                font-size: 0.9rem;
+                            }
+                        }
+                    }
+                }
+
+                .columna-seguime {
+                    @include flex-center(center, center);
+                    order: 3;
+                    margin-top: 1rem;
+
+                    h5 {
+                        margin-bottom: 1.5rem;
+                    }
+
+                    ul {
+                        @include flex-center(row, center);
+                        margin: 0;
+                        padding: 0;
+                        font-size: 0.8rem;
+
+                        li {
+                            margin: 0 0.5rem;
+
+                            a {
+                                @include flex-center(center, center);
+                            }
+
+                            span {
+                                @include ocultar;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            .footer-terminos {
+                @include dimension(100%, 4rem);
+                @include flex-center (row, center, center);
+                padding: 0;
+                text-align: $cen;
+                margin-top: 2rem;
+                position: $rel;
+
+                p {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+}
+
+
+// Media Queries Small Mobile
+
+@media only screen and (max-width: 350px) {
+
+    footer {
+        .footer-container {
+            .footer- {
+                margin-bottom: 0;
+
+                p {
+                    font-size: 0.65rem;
+                }
+            }
+
+            .footer-contenido {
+
+                .columna-navegacion,
+                .columna-seguime,
+                .columna-contacto {
+                    h5 {
+                        font-size: 0.8rem;
+                        margin-bottom: 1rem;
+                    }
+
+                    ul {
+                        li {
+                            margin-bottom: 0.5rem;
+                            a {
+                                font-size: 0.6rem;
+                            }
+                            i {
+                                img{
+                                    @include dimension (0.7rem,auto);
+                                }
+                            }
+                            span {
+                                font-size: 0.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-terminos {
+                margin-top: 1rem;
+                padding: 0.5rem 0.5rem;
+                p{
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,121 @@
+// Estilo de Contacto / Preguntas Frecuentes / Desktop
+
+.preguntas-container {
+    @include dimension (100%, auto);
+    @include box-sizing;
+    padding: 0 10%;
+    text-align: $cen;
+
+    .preguntas-texto {
+        margin-top: 5.25rem;
+
+        p {
+            width: 100%;
+            margin: 2rem 0 3.5rem 0;
+            line-height: 1.5;
+        }
+    }
+
+    .preguntas-lista {
+        width: 100%;
+        margin-bottom: 4rem;
+
+        .accordion-item {
+            margin-bottom: 2.5rem;
+            border-bottom: none;
+
+            button {
+                background-color: $color-gris;
+                border: 1px solid $color-gris;
+                border-radius: 0.5rem !important;
+
+                &:not(.collapsed) {
+                    background-color: $color-gris-oscuro;
+                }
+            }
+
+            &:not(.collapsed) {
+                color: $color-negro;
+                background-color: none !important;
+                box-shadow: none;
+            }
+        }
+
+        .accordion-body {
+            background-color: $color-blanco;
+            border: 2px solid $color-gris;
+            border-top: none;
+            border-radius: 0 0 0.5rem 0.5rem !important;
+            margin-bottom: -8px;
+        }
+    }
+}
+
+
+// Media Querys Tablet
+
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+
+    .preguntas-container {
+        padding: 0 5%;
+
+        .preguntas-texto {
+            margin: 4rem 0 0 0;
+        }
+
+        .preguntas-lista {
+
+            .accordion-item {
+                margin-bottom: 2rem;
+                
+                .accordion-header {
+
+                    button {
+                        font-size: 1rem !important;
+                    }
+                }
+            }
+
+            .accordion-body {
+                font-size: 0.875rem;
+            }
+        }
+    }
+}
+
+// Media Querys Mobile
+
+@media only screen and (max-width: 501px) {
+
+    .preguntas-container {
+        padding: 0 5%;
+
+        .preguntas-texto {
+            margin: 4rem 0 0 0;
+
+            p {
+                margin-bottom: 2rem;
+            }
+        }
+
+        .preguntas-lista {
+
+            .accordion-item {
+                margin-bottom: 1.5rem;
+
+                .accordion-header {
+
+                    button {
+                        font-size: 0.8rem !important;
+                    }
+                }
+
+                .accordion-body {
+
+                    font-size: 0.8rem !important;
+
+                }
+            }
+        }
+    }
+}

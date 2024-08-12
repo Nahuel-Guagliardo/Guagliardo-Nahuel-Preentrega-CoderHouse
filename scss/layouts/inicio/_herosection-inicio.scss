@@ -1,0 +1,213 @@
+// Estilo del Index / Hero Section / Desktop
+
+.herosection-container {
+    @include dimension (100, 42.5rem);
+    @include flex-center(center, center);
+    @include box-sizing;
+    position: $rel;
+
+    .herosection {
+        @include dimension (100%, 100%);
+        display: flex;
+
+        .hero-texto {
+            @include dimension (40%, auto);
+            @include flex-center (column, flex-start, flex-start);
+            margin-left: 10%;
+            margin-top: 9rem;
+            position: $rel;
+            z-index: 2;
+
+            h1 {
+                margin: 0 0 2.25rem 0;
+            }
+
+            p {
+                line-height: 1.5;
+            }
+        }
+
+        .hero-botones {
+            @include flex-center (row, flex-start, flex-start);
+            position: $abs;
+            bottom: 8%;
+            left: 10%;
+            gap: 2rem;
+            z-index: 3;
+        }
+
+        .hero-image {
+            @include dimension (auto, 37.5rem);
+            position: $abs;
+            right: 0;
+            top: 5rem;
+            height: 37.5rem;
+            z-index: -1;
+
+            img {
+                @include dimension (auto, 100%);
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+// Media Querys Tableta
+
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+
+    .herosection-container {
+        @include dimension (auto, auto);
+        padding-top: 5rem;
+
+        .herosection {
+            @include flex-center(column, center, center);
+            @include dimension (100%, auto);
+
+            .hero-texto {
+                align-items: $cen;
+                margin: 3rem 2rem 0 2rem;
+                width: auto;
+
+                h1 {
+                    text-align: $cen;
+                }
+
+                p {
+                    text-align: $cen;
+                    line-height: 1.5;
+                    margin: 0 0 2.25rem 0;
+                }
+            }
+
+            .hero-botones {
+                @include flex-center(row, center, center);
+                gap: 15%;
+                position: $rel;
+                top: 0;
+                left: 0;
+
+                a {
+                    margin: 0;
+                    white-space: nowrap;
+                    display: inline;
+                    margin-bottom: 20%;
+                }
+            }
+
+            .hero-image {
+                @include dimension (100%, 28rem);
+                @include flex-center (row, end, end);
+                order: -1;
+                position: $rel;
+                top: 0;
+
+                img {
+                    width: auto;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+// Media Querys Mobile
+
+@media only screen and (max-width:500px) {
+
+    .herosection-container {
+        height: auto;
+        padding-top: 5rem;
+
+        .herosection {
+            @include flex-center(column, center, center);
+            width: 100%;
+            padding: 0;
+
+            .hero-texto {
+                @include flex-center (column, center, center);
+                padding: 0 1.5rem;
+                width: auto;
+                margin: 2rem 0 0 0;
+
+                h1 {
+                    text-align: $cen;
+                    margin-bottom: 1, 5rem;
+                }
+
+                p {
+                    text-align: $cen;
+                    line-height: 1.5;
+                    margin: 0 0 2rem 0;
+                }
+            }
+
+            .hero-botones {
+                @include flex-center (row, center, center);
+                gap: 5%;
+                position: $rel;
+                left: 0;
+                margin-bottom: 15%;
+
+                a {
+                    margin: 0;
+                    white-space: nowrap;
+                    display: inline;
+                }
+            }
+
+            .hero-image {
+                @include dimension (100%, 18.75rem);
+                order: -1;
+                position: $rel;
+                top: 0;
+                margin-bottom: 4rem;
+
+                img {
+                    @include dimension (100%, 22.5rem);
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+// Media Querys Mobile - 350px
+
+@media only screen and (max-width: 350px) {
+
+    .herosection-container {
+        display: flex;
+        flex-direction: column;
+
+        .herosection {
+            @include flex-center(column, center, center);
+            width: 100%;
+            padding: 0;
+
+            .hero-texto {
+                padding: 0 1.5rem;
+                height: auto;
+                width: 100%;
+                margin: 1rem 0;
+
+                p {
+                    width: 100%;
+                }
+            }
+
+            .hero-botones {
+                flex-direction: column;
+                gap: 1rem;
+
+                a {
+                    white-space: normal;
+                    text-align: $cen;
+                    padding: 0.1rem 0.1rem;
+                    width: auto;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,158 @@
+// Estilo de Servicios / Hero Section / Desktop
+
+.herosection-3-container {
+    @include dimension (100%, 42.5rem);
+    @include flex-center (column, center, center);
+    @include box-sizing;
+    top: 0;
+    position: $rel;
+    background-color: $color-blanco;
+    overflow: hidden;
+
+    .hero3container {
+        @include dimension (auto, 42.5rem);
+        @include flex-center (column,flex-start, flex-start);
+        position: $rel;
+
+        .hero-texto3 {
+            @include dimension (40%, auto);
+            @include flex-center (column, flex-start, flex-start);
+            margin-left: 10%;
+            margin-top: 9rem;
+            position: $rel;
+            z-index: 2;
+
+            h1 {
+                margin: 0 0 2rem 0;
+            }
+
+            p {
+                line-height: 1.5;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .hero-image-3 {
+            @include dimension (50%, 42.5rem);
+            order: -1;
+            position: $abs;
+            right: 0;
+            top: 0;
+            overflow: hidden;
+            z-index: 1;
+
+            img {
+                @include dimension (auto, 100%);
+                object-fit: cover;
+                position: $abs;
+                right: 0;
+                top: 0;
+            }
+
+            .image-overlay-der-3 {
+                @include dimension (100%, 100%);
+                position: $abs;
+                top: 0;
+                left: 0;
+                @include gradient(to right,
+                    rgb(255, 255, 255) 0%,
+                    rgba(217, 217, 217, 0) 25%);
+                z-index: 1;
+            }
+        }
+    }
+}
+
+// Media Querys Tableta
+
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+
+    .herosection-3-container {
+        @include dimension (auto, 100%);
+
+        .hero3container {
+            @include dimension (100%, auto);
+            @include flex-center (column, center, center);
+
+            .hero-texto3 {
+                @include flex-center (column, center, center);
+                margin: 2rem 0 0 0;
+                padding: 0 5%;
+                width: auto;
+
+                h1 {
+                    text-align: $cen;
+                    margin-bottom: 1rem;
+                }
+
+                p {
+                    text-align: $cen;
+                    line-height: 1.5;
+                    margin: 0 0 1rem 0;
+                }
+            }
+
+            .hero-image-3 {
+                @include dimension (100%, 33rem);
+                @include flex-center (column, end, end);
+                order: -1;
+                position: $rel;
+                top: 0;
+
+                img {
+                    width: auto;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+// Media Querys Mobile*/
+
+@media only screen and (max-width:500px) {
+
+    .herosection-3-container {
+        height: auto;
+
+        .hero3container {
+            @include dimension (100%, auto);
+            @include flex-center (column, center, center);
+
+            .hero-texto3 {
+                @include flex-center (column, center, center);
+                padding: 0 5%;
+                margin: 2rem 0;
+                width: auto;
+
+                h1 {
+                    text-align: $cen;
+                }
+
+                p {
+                    text-align: $cen;
+                    line-height: 1.5;
+                    margin: 0;
+                }
+            }
+
+            .hero-image-3 {
+                @include dimension (100%, 28rem);
+                @include flex-center (column, end, end);
+                order: -1;
+                position: $rel;
+                top: 0;
+                
+
+                img {
+                    width: auto;
+                    object-fit: cover;
+                }
+
+                .image-overlay-der-3 {
+                    @include ocultar;
+                }
+            }
+        }
+    }
+}       

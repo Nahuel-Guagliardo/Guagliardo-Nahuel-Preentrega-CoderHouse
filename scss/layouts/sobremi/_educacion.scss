@@ -1,0 +1,228 @@
+// Estilo de Sobre Mi / Educación / Desktop
+
+.educacion-container {
+    @include dimension (100%, auto);
+    @include flex-center (column, center, center);
+    @include box-sizing;
+    background-color: $color-blanco;
+    position: $rel;
+
+    .educacion {
+        @include dimension (100%, 100%);
+        display: flex;
+
+        .educacion-texto {
+            @include dimension (35%, auto);
+            @include flex-center (column, flex-start, flex-start);
+            margin-left: 10%;
+            margin-top: 5%;
+            position: $rel;
+            z-index: 2;
+
+            h2 {
+                margin: 0;
+                margin-bottom: 2.0rem;
+            }
+
+            p {
+                margin: 0 0 1rem 0;
+                line-height: 1.5;
+            }
+
+            .instituciones {
+                @include flex-center (column, flex-start, flex-start);
+                font-family: "roboto_regular";
+                font-size: 0.9rem;
+                color: $color-negro;
+                position: $rel;
+                z-index: 2;
+
+                ol {
+                    @include flex-center (column, flex-start, flex-start);
+                    padding: 0;
+                    margin: 3rem 0;
+                    list-style: none;
+
+                    li {
+                        @include flex-center (column, center, center);
+                        position: $rel;
+                        padding-left: 2.75rem;
+                        margin-bottom: 1.4rem;
+
+                        &::before {
+                            @include dimension (0.6rem, 0.6rem);
+                            margin-right: 0.5rem;
+                            content: '';
+                            position: $abs;
+                            left: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            background-color: $color-negro;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .educacion-image {
+            @include dimension (50%, 100%);
+            order: -1;
+            position: $abs;
+            right: 0;
+            top: 0;
+            z-index: 1;
+            overflow: hidden;
+
+            img {
+                @include dimension (auto, 100%);
+                object-fit: cover;
+                position: $abs;
+                right: 0;
+                z-index: 2;
+            }
+
+            .image-overlay-der-3 {
+                @include dimension (100%, 100%);
+                position: $abs;
+                top: 0;
+                right: 0;
+                @include gradient(to right,
+                    rgba(255, 255, 255, 1) 0%,
+                    rgba(217, 217, 217, 0) 100%);
+                z-index: 3;
+            }
+        }
+    }
+}
+
+
+// Media Querys Tableta
+
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+
+    .educacion-container {
+        @include dimension (100%, auto);
+
+        .educacion {
+            @include flex-center (column, center, center);
+            width: 100%;
+
+            .educacion-texto {
+                @include flex-center (column, center, center);
+                padding: 0 5%;
+                order: 2;
+                margin: 3rem 0 0 0;
+                width: auto;
+
+                h2 {
+                    text-align: $cen;
+                }
+
+                p {
+                    text-align: $cen;
+                    line-height: 1.5;
+                    margin: 0;
+                }
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+
+                .instituciones {
+
+                    ol {
+                        @include flex-center (column, center, center);
+                        text-align: $cen;
+                        padding: 0;
+                        margin: 3rem 0;
+                        list-style: none;
+                    }
+
+                    li {
+                        position: $rel;
+                        padding-left: 1rem;
+                    }
+
+                    .instituciones ol li::before {
+                        @include dimension (0.3rem, 0.3rem);
+                        margin-right: 0.5rem;
+                    }
+                }
+            }
+
+            .educacion-image {
+                @include dimension (100%, 28rem);
+                @include flex-center (column, center, center);
+                order: 1;
+                position: $rel;
+                top: 0;
+
+                img {
+                    width: auto;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+// Media Querys Mobile
+
+@media only screen and (max-width:500px) {
+
+    .educacion-container {
+        height: auto;
+
+        .educacion {
+            @include flex-center (column, center, center);
+            width: 100%;
+
+            .educacion-texto {
+                @include flex-center (column, center, center);
+                order: 2;
+                padding: 0 5%;
+                margin: 3rem 0 0 0;
+                width: auto;
+
+
+                h2 {
+                    text-align: $cen;
+                }
+
+                p {
+                    text-align: $cen;
+                    line-height: 1.5;
+                    margin: 0;
+                }
+
+                .instituciones ol{
+                    margin-top: 2rem;
+
+                    ol li::before {
+                        margin-right: 0.5rem;
+                        width: 0.5rem;
+                        height: 0.5rem;
+                    }
+                }
+            }
+
+            .educacion-image {
+                @include dimension (100%, 28rem);
+                @include flex-center (column, end, end);
+                order: 1;
+                position: $rel;
+                top: 0;
+
+                img {
+                    width: auto;
+                    object-fit: cover;
+                }
+
+                .image-overlay-der-3 {
+                    @include ocultar;
+                }
+            }
+        }
+    }
+}

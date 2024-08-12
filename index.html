@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NG-Diseño | Inicio</title>
+    <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- CDN AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CDN Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -55,8 +61,8 @@
                 </p>
             </div>
             <div class="hero-botones">
-                <a href="html/portfolio.html" class="boton-gris">Mi Portfolio</a>
-                <a href="html/contacto.html" class="boton-borde-gris">Contactate Conmigo</a>
+                <a href="html/portfolio.html" class="boton-gris animate__animated">Mi Portfolio</a>
+                <a href="html/contacto.html" class="boton-borde-gris animate__animated">Contactate Conmigo</a>
             </div>
             <div class="hero-image">
                 <div class="image-overlay-der"></div>
@@ -85,9 +91,9 @@
                     Recientemente me adentre en el mundo del diseño UX/UI, y me encanto asi que hoy en dia me encuentro
                     ampliando mis conocimientos para convertirme en un mejor profesional.
                 </p>
-                <div class="boton-container">
-                    <a href="html/sobremi.html" class="boton-bco">Mirá mi CV</a>
-                </div>
+            </div>
+            <div class="boton-container" data-aos="fade-down" data-aos-duration="1000">
+                <a href="html/sobremi.html" class="boton-bco">Mirá mi CV</a>
             </div>
             <div class="acerca-image">
                 <div class="image-overlay-izq"></div>
@@ -155,7 +161,7 @@
                     <a href="html/servicios.html#modelado" class="boton-bco">Ver Más</a>
                 </div>
             </div>
-            <div class="boton-mas-info">
+            <div class="boton-mas-info" data-aos="fade-down" data-aos-duration="1000">
                 <a href="html/servicios.html" class="boton-gris">Más información acá</a>
             </div>
         </div>
@@ -305,7 +311,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-            <div class="ver-portfolio-completo">
+            <div class="ver-portfolio-completo" data-aos="fade-down" data-aos-duration="1000">
                 <a href="html/portfolio.html" class="boton-bco">Ver Portfolio el completo</a>
             </div>
         </div>
@@ -334,7 +340,7 @@
                     </div>
                 </div>
             </div>
-            <div class="boton-contactame">
+            <div class="boton-contactame" data-aos="fade-down" data-aos-duration="1000">
                 <a href="html/contacto.html" class="boton-gris">Contáctame</a></li>
             </div>
             <div class="contacto-image">
@@ -373,25 +379,25 @@
                     <h5>Seguime</h5>
                     <ul>
                         <li><a href="https://www.instagram.com/ng_ilustrador" target="_blank">
-                            <i class="icono-instagram">
-                                <img src="imagenes/icono_instagram.png"alt="Icono Instagram">
-                            </i>
-                            <span>@ng_ilustrador</span>
-                        </a>
+                                <i class="icono-instagram">
+                                    <img src="imagenes/icono_instagram.png" alt="Icono Instagram">
+                                </i>
+                                <span>@ng_ilustrador</span>
+                            </a>
                         </li>
-                        <li><a href="https://www.linkedin.com/in/nahuelguagliardo-ux-ui"target="_blank">
-                            <i class="icono-linkedin">
-                                <img src="imagenes/icono_linkedin.png" alt="Icono Linkedin">
-                            </i>
-                            <span>@nahuelguagliardo-ux-ui</span>
-                        </a>
+                        <li><a href="https://www.linkedin.com/in/nahuelguagliardo-ux-ui" target="_blank">
+                                <i class="icono-linkedin">
+                                    <img src="imagenes/icono_linkedin.png" alt="Icono Linkedin">
+                                </i>
+                                <span>@nahuelguagliardo-ux-ui</span>
+                            </a>
                         </li>
-                        <li><a href="https://www.behance.net/nahuelguaglia"target="_blank">
-                            <i class="icono-behance">
-                                <img src="imagenes/icono_behance.png" alt="Icono Behance">
-                            </i>                            
-                            <span>@nahuelguaglia</span>
-                        </a>
+                        <li><a href="https://www.behance.net/nahuelguaglia" target="_blank">
+                                <i class="icono-behance">
+                                    <img src="imagenes/icono_behance.png" alt="Icono Behance">
+                                </i>
+                                <span>@nahuelguaglia</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -416,8 +422,40 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!-- Script Boostrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+    <!-- Script Aos -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Java Animated -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const botones = document.querySelectorAll('.boton-gris, .boton-borde-gris');
+
+            botones.forEach(boton => {
+                boton.addEventListener('mouseover', () => {
+                    boton.classList.add('animate__heartBeat');
+                    boton.style.animationDuration = '2s';
+                });
+
+                boton.addEventListener('animationend', () => {
+                    boton.classList.remove('animate__heartBeat');
+                });
+            });
+        });
+    </script>
 
 </body>
 
