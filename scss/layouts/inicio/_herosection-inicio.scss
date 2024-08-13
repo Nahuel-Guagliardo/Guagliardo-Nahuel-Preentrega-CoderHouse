@@ -34,6 +34,16 @@
             left: 10%;
             gap: 2rem;
             z-index: 3;
+
+            .boton-gris:hover {
+                -webkit-animation: jello-vertical 1s ease both;
+                animation: jello-vertical 1s ease both;
+            }
+
+            .boton-borde-gris:hover {
+                -webkit-animation: jello-vertical 1s ease both;
+                animation: jello-vertical 1s ease both;
+            }
         }
 
         .hero-image {

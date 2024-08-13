@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NG-Diseño | Sobre Mi</title>
-    <!-- CDN Animate -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Css -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -338,25 +336,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- Java Animated -->
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const botones = document.querySelectorAll('.boton-gris, .boton-borde-gris');
-
-            botones.forEach(boton => {
-                boton.addEventListener('mouseover', () => {
-                    boton.classList.add('animate__heartBeat');
-                    boton.style.animationDuration = '2s';
-                });
-
-                boton.addEventListener('animationend', () => {
-                    boton.classList.remove('animate__heartBeat');
-                });
-            });
-        });
-    </script>
 
 </body>
 

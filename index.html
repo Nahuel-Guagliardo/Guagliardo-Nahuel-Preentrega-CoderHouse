@@ -10,8 +10,6 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- CDN AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- CDN Animate -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -61,8 +59,8 @@
                 </p>
             </div>
             <div class="hero-botones">
-                <a href="html/portfolio.html" class="boton-gris animate__animated">Mi Portfolio</a>
-                <a href="html/contacto.html" class="boton-borde-gris animate__animated">Contactate Conmigo</a>
+                <a href="html/portfolio.html" class="boton-gris">Mi Portfolio</a>
+                <a href="html/contacto.html" class="boton-borde-gris">Contactate Conmigo</a>
             </div>
             <div class="hero-image">
                 <div class="image-overlay-der"></div>
@@ -436,25 +434,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-    </script>
-
-    <!-- Java Animated -->
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const botones = document.querySelectorAll('.boton-gris, .boton-borde-gris');
-
-            botones.forEach(boton => {
-                boton.addEventListener('mouseover', () => {
-                    boton.classList.add('animate__heartBeat');
-                    boton.style.animationDuration = '2s';
-                });
-
-                boton.addEventListener('animationend', () => {
-                    boton.classList.remove('animate__heartBeat');
-                });
-            });
-        });
     </script>
 
 </body>

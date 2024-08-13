@@ -38,6 +38,11 @@
             left: 10%;
             right: 0;
             z-index: 3;
+
+            &:hover {
+                -webkit-animation: jello-vertical 1s ease both;
+                animation: jello-vertical 1s ease both;
+            }
         }
 
         .hero-image-2 {

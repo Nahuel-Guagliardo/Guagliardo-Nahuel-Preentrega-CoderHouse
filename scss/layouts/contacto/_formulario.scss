@@ -155,6 +155,8 @@
 
                     &:hover {
                         background-color: $color-gris-oscuro;
+                        -webkit-animation: jello-vertical 1s ease both;
+                        animation: jello-vertical 1s ease both;
                     }
                 }
             }
@@ -246,7 +248,7 @@
                     .contacto-item-2 p {
                         margin: 0;
                     }
-            
+
                 }
             }
 
@@ -306,7 +308,7 @@
 @media only screen and (max-width: 250px) {
     .formulario-container {
         @include dimension(100%, auto);
-        padding: 0 2%; 
+        padding: 0 2%;
 
         .formulario {
             @include flex-center(column, center, center);
@@ -316,11 +318,11 @@
             .formulario-texto {
                 @include flex-center(column, center, center);
                 margin: 0;
-                padding: 5% 0; 
-                width: 100%; 
+                padding: 5% 0;
+                width: 100%;
 
                 h2 {
-                    font-size: 1.5rem; 
+                    font-size: 1.5rem;
                     text-align: $cen;
                 }
 
@@ -332,24 +334,24 @@
 
                 .contacto-info-2 {
                     @include flex-center(column, center, center);
-                    gap: 0.5rem; 
+                    gap: 0.5rem;
 
                     .contacto-item-2 {
                         display: flex;
                         align-items: $cen;
 
                         i {
-                            @include dimension(1rem, 1rem); 
+                            @include dimension(1rem, 1rem);
                             margin-right: 0.3rem;
                         }
 
-                        img{
+                        img {
                             @include dimension (0.8rem, auto);
                         }
 
 
                         p {
-                            font-size: 0.875rem; 
+                            font-size: 0.875rem;
                             margin: 0;
                         }
                     }
@@ -369,16 +371,16 @@
                         margin-bottom: 1rem;
 
                         label {
-                            font-size: 0.875rem; 
+                            font-size: 0.875rem;
                         }
 
                         input {
-                            @include dimension(100%, 2.5rem); 
-                            font-size: 0.875rem; 
+                            @include dimension(100%, 2.5rem);
+                            font-size: 0.875rem;
                         }
 
                         &::placeholder {
-                            font-size: 0.875rem; 
+                            font-size: 0.875rem;
                         }
                     }
                 }
@@ -387,16 +389,16 @@
                     width: 100%;
 
                     label {
-                        font-size: 0.875rem; 
+                        font-size: 0.875rem;
                     }
 
                     textarea {
-                        @include dimension(100%, 10rem); 
-                        font-size: 0.875rem; 
+                        @include dimension(100%, 10rem);
+                        font-size: 0.875rem;
                     }
 
                     &::placeholder {
-                        font-size: 0.875rem; 
+                        font-size: 0.875rem;
                     }
                 }
 
@@ -407,8 +409,8 @@
                     button[type="submit"] {
                         margin: 1rem 0;
                         align-self: $cen;
-                        font-size: 0.875rem; 
-                        padding: 0.5rem 1rem; 
+                        font-size: 0.875rem;
+                        padding: 0.5rem 1rem;
                     }
                 }
             }

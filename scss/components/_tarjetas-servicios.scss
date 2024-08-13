@@ -32,6 +32,11 @@
         text-align: $cen;
         margin: 0 0 2rem 0 !important;
     }
+
+    .boton-bco:hover {
+        -webkit-animation: jello-vertical 1s ease both;
+        animation: jello-vertical 1s ease both;
+    }
 }
 
 // Media Querys Mobile
