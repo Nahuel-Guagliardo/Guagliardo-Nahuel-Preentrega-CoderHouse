@@ -1,0 +1,60 @@
+.anima-inicio {
+    @include dimension (100%, 100%);
+    @include flex-center (column, flex-start, center);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(166, 166, 166, 1) 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+
+    .logo-anima {
+        margin-top: 15%;
+        animation: shrinkLogo 0.5s forwards ease-in-out 0.5s;
+    }
+}
+
+// Media Query Tablet
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+
+    .anima-inicio {
+        .logo-anima {
+            margin-top: 35%;
+        }
+    }
+}
+
+// Media Query Mobile
+@media only screen and (max-width: 500px) {
+    .anima-inicio {
+
+        .logo-anima {
+            margin-top: 50%;
+
+            img{
+                @include dimension (auto, 75%);
+            }
+        }
+    }
+}
+
+
+@keyframes shrinkLogo {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+}
+
+.hide-anima {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+}

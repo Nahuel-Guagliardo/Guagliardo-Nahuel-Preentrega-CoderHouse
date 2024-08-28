@@ -76,8 +76,8 @@
 
             .hero-texto3 {
                 @include flex-center (column, center, center);
-                margin: 2rem 0 0 0;
-                padding: 0 5%;
+                margin: 3rem 0 0 0;
+                padding: 4% 5%;
                 width: auto;
 
                 h1 {
@@ -103,6 +103,10 @@
                     width: auto;
                     object-fit: cover;
                 }
+
+                .image-overlay-der-3 {
+                    @include ocultar;
+                }
             }
         }
     }
@@ -122,11 +126,12 @@
             .hero-texto3 {
                 @include flex-center (column, center, center);
                 padding: 0 5%;
-                margin: 2rem 0;
+                margin: 3rem 0;
                 width: auto;
 
                 h1 {
                     text-align: $cen;
+                    margin-bottom: 1rem;
                 }
 
                 p {
@@ -142,11 +147,11 @@
                 order: -1;
                 position: $rel;
                 top: 0;
-                
 
                 img {
                     width: auto;
                     object-fit: cover;
+                    right: -5rem;
                 }
 
                 .image-overlay-der-3 {

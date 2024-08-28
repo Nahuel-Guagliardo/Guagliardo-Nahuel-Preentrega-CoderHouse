@@ -1,7 +1,7 @@
 // Estilo de Servicios/ Contacto / Desktop
 
 .servicios-izq-container {
-    @include dimension (100%, 37.5rem);
+    @include dimension (100%, auto);
     @include flex-center (row, center, center);
     @include box-sizing;
     background-color: $color-blanco;
@@ -15,8 +15,7 @@
         .servicios-izq-texto {
             @include dimension (35%, auto);
             @include flex-center (column, flex-start, flex-start);
-            margin-left: 10%;
-            margin-top: 5%;
+            margin: 5rem 0 5rem 10%;
             position: $rel;
             z-index: 2;
 
@@ -26,17 +25,22 @@
 
             p {
                 line-height: 1.5;
-                margin-bottom: 1rem;
+                margin-bottom: 3rem;
             }
 
-        }
+            .servicios-izq-boton {
+                position: $rel;
+                z-index: 3;
 
-        .servicios-izq-boton {
-            margin-left: 10%;
-            position: $abs;
-            bottom: 10%;
-            left: 0;
-            z-index: 3;
+                a{
+                    @include box-shadow(4px, 4px, 8px, 0px, $color-gris-oscuro);
+                }
+
+                &:hover {
+                    -webkit-animation: jello-vertical 1s ease both;
+                    animation: jello-vertical 1s ease both;
+                }
+            }
         }
 
         .section-izq-image {
@@ -93,22 +97,22 @@
                 p {
                     text-align: $cen;
                     line-height: 1.5;
-                    margin: 0 0 1.5rem 0;
+                    margin: 0;
                 }
 
                 &:last-of-type {
                     margin-bottom: 1.5rem;
                 }
-            }
 
-            .servicios-izq-boton {
-                @include flex-center (column, center, center);
-                position: $rel;
-                margin: 2rem 0;
+                .servicios-izq-boton {
+                    @include flex-center (column, center, center);
+                    position: $rel;
+                    margin: 2rem 0;
 
-                a {
-                    margin: 5% 0 8% 0;
-                    white-space: nowrap;
+                    a {
+                        margin: 5% 0 8% 0;
+                        white-space: nowrap;
+                    }
                 }
             }
 
@@ -163,18 +167,19 @@
                 &:last-of-type {
                     margin-bottom: 2rem;
                 }
-            }
 
-            .servicios-izq-boton {
-                @include flex-center (column, center, center);
-                white-space: nowrap;
-                text-align: $cen;
-                margin: 0 0 3rem 0;
-                position: $rel;
 
-                a {
-                    margin: 5% 0;
+                .servicios-izq-boton {
+                    @include flex-center (column, center, center);
                     white-space: nowrap;
+                    text-align: $cen;
+                    margin: 0 0 2rem 0;
+                    position: $rel;
+
+                    a {
+                        margin: 5% 0;
+                        white-space: nowrap;
+                    }
                 }
             }
 
@@ -188,6 +193,8 @@
                 img {
                     width: auto;
                     object-fit: cover;
+                    position: $rel;
+                    right: -8rem;
                 }
 
                 .image-overlay-der-serv {

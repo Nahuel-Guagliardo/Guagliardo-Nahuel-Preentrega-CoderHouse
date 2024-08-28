@@ -27,7 +27,7 @@
             p {
                 margin: 0 0 2rem 0;
                 line-height: 1.5;
-                margin-bottom: 4rem;
+                margin-bottom: 5rem;
             }
         }
 
@@ -76,8 +76,7 @@
                 margin: 3rem 0 0 0;
                 padding: 0 5%;
                 width: auto;
-                padding-bottom: 3rem;
-
+                padding-bottom: 5rem;
 
                 h2 {
                     text-align: $cen;
@@ -106,6 +105,10 @@
                     @include dimension (auto, 100%);
                     object-position: left;
                     object-fit: cover;
+                }
+
+                .image-overlay-izq-2 {
+                    @include ocultar;
                 }
             }
         }

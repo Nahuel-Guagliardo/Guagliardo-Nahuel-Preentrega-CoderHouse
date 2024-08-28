@@ -1,19 +1,19 @@
 // Estilo del Index / Acerca de Mi / Desktop
 
 .acerca-mi-container {
-    @include dimension (100%, 37.5rem);
+    @include dimension (100%, auto);
     @include flex-center (row, center, center);
     @include box-sizing;
     background-color: $color-gris;
     position: $rel;
 
     .acerca-mi {
-        @include dimension (100%, 100%);
+        @include dimension (100%, auto);
         display: flex;
 
         .acerca-texto {
             @include dimension (35%, auto);
-            @include flex-center (column, flex-start, flex-start);
+            @include flex-center (column, center, flex-start);
             margin-left: 55%;
             margin-top: 5%;
             position: $rel;
@@ -28,18 +28,22 @@
                 margin: 0 0 1rem 0;
                 line-height: 1.5;
             }
-        }
 
-        .boton-container {
-            margin-right: 10%;
-            position: $abs;
-            bottom: 10%;
-            right: 0;
-            text-align: right;
-            z-index: 3;
-            
-            a {
-                margin-top: 15%;
+            .boton-container {
+                @include flex-center (row, flex-end, flex-end);
+                width: 100%;
+                position: $rel;
+                z-index: 3;
+                margin: 2rem 0 5rem 0;
+
+                a {
+                    @include box-shadow(4px, 4px, 8px, 0px, $color-gris-oscuro);
+                }
+
+                a:hover {
+                    -webkit-animation: jello-vertical 1s ease both;
+                    animation: jello-vertical 1s ease both;
+                }
             }
         }
 
@@ -102,16 +106,15 @@
                     margin-bottom: 0;
                 }
 
-            }
+                .boton-container {
+                    @include flex-center (column, center, center);
+                    position: $rel;
+                    margin: 2rem 0;
 
-            .boton-container {
-                @include flex-center (column, center, center);
-                position: $rel;
-                margin: 2rem 0;
-
-                a {
-                    margin: 5% 0 8% 0;
-                    white-space: nowrap;
+                    a {
+                        margin: 5% 0 8% 0;
+                        white-space: nowrap;
+                    }
                 }
             }
 
@@ -125,6 +128,10 @@
                 img {
                     width: auto;
                     object-fit: cover;
+                }
+
+                .image-overlay-izq {
+                    @include ocultar;
                 }
             }
         }
@@ -157,18 +164,18 @@
                     line-height: 1.5;
                     margin: 0 0 1.5rem 0;
                 }
-            }
 
-            .boton-container {
-                @include flex-center (column, center, center);
-                white-space: nowrap;
-                text-align: $cen;
-                margin: 0 0 3rem 0;
-                position: $rel;
-                
-                a {
-                    margin: 5% 0;
+                .boton-container {
+                    @include flex-center (column, center, center);
                     white-space: nowrap;
+                    text-align: $cen;
+                    margin: 0 0 3rem 0;
+                    position: $rel;
+
+                    a {
+                        margin: 5% 0;
+                        white-space: nowrap;
+                    }
                 }
             }
 

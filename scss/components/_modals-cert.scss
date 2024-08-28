@@ -1,0 +1,32 @@
+// Modals / Sobre Mi / Certificado
+
+.modal-header-2 {
+    @include dimension (auto, auto);
+    padding: 1% 0;
+
+    img {
+        margin: 0 1rem 0 0;
+        height: 1.5rem;
+        width: auto;
+    }
+
+    .btn-close-2 {
+        --bs-btn-close-bg: url('../imagenes/x-blanca.png');
+        background: transparent var(--bs-btn-close-bg) center / 1em auto no-repeat;
+        --bs-btn-close-opacity: none;
+        position: $abs;
+        right: 0;
+        width: 1rem;
+        height: 1rem;
+        padding: .25em;
+        border: 0;
+        border-radius: .375rem;
+        opacity: var(--bs-btn-close-opacity);
+        z-index: 1550;
+    }
+}
+
+.modal-body-2 {
+    position: $rel;
+    margin-top: 2rem;
+}

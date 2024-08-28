@@ -5,7 +5,8 @@
     @include box-shadow(8px, 8px, 16px, 0px, $color-gris-oscuro);
     @include box-sizing;
     height: auto;
-    background-color: $color-gris;
+    background-color: $color-blanco;
+    border: 1px solid $color-gris;
     border-radius: 1.2rem;
     padding: 2rem;
 
@@ -23,7 +24,6 @@
             margin: 0;
             text-align: $cen;
         }
-
     }
 
     p {
@@ -33,9 +33,13 @@
         margin: 0 0 2rem 0 !important;
     }
 
-    .boton-bco:hover {
-        -webkit-animation: jello-vertical 1s ease both;
-        animation: jello-vertical 1s ease both;
+    .boton-gris {
+        @include box-shadow(4px, 4px, 8px, 0px, $color-gris-oscuro);
+
+        &:hover {
+            -webkit-animation: jello-vertical 1s ease both;
+            animation: jello-vertical 1s ease both;
+        }
     }
 }
 
@@ -48,7 +52,7 @@
 
         .icono-titulo {
             @include flex-center (column, center, center);
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
 
             .icono-servicios {
                 img {
@@ -58,8 +62,9 @@
             }
         }
 
-        .tarjetas p {
+        p {
             width: auto;
+            margin-bottom: 1rem !important;
         }
     }
 }

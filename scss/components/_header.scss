@@ -12,8 +12,8 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10;
-    @include box-shadow(0, 0.1rem, 0.5rem, 0px, $color-gris-oscuro);
+    z-index: 30;
+    @include box-shadow(0, 0.1rem, 0.5rem, 0px, $color-gris-muy-oscuro);
 
     .header-container {
         @include flex-center(row, space-between, center);
@@ -116,7 +116,7 @@ header {
         left: 0;
         width: 100%;
         background-color: $color-gris;
-        z-index: 15;
+        z-index: 30;
 
         ul {
             margin: 0;

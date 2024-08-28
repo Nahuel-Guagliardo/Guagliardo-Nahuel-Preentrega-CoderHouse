@@ -47,5 +47,14 @@
 
     .ver-portfolio-completo {
         margin: 3.5rem 0;
+
+        a{
+            @include box-shadow(4px, 4px, 8px, 0px, $color-gris-oscuro);
+        }
+
+        &:hover {
+            -webkit-animation: jello-vertical 1s ease both;
+            animation: jello-vertical 1s ease both;
+        }
     }
 }

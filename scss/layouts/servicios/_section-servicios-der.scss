@@ -1,7 +1,7 @@
 // Estilo de Servicios / Secciones Lado Derecho / Desktop
 
 .servicios-der-container {
-    @include dimension (100%, 37.5rem);
+    @include dimension (100%, auto);
     @include flex-center (row, center, center);
     @include box-sizing;
     background-color: $color-gris;
@@ -15,8 +15,7 @@
         .servicios-der-texto {
             @include dimension (35%, auto);
             @include flex-center (column, flex-start, flex-start);
-            margin-left: 55%;
-            margin-top: 5%;
+            margin: 5rem 10% 5rem 55%;
             position: $rel;
             z-index: 2;
 
@@ -26,22 +25,25 @@
 
             p {
                 line-height: 1.5;
-                margin-bottom: 1rem;
-
+                margin-bottom: 3rem;
             }
-        }
 
-        .servicios-der-boton {
-            margin-right: 10%;
-            position: $abs;
-            bottom: 10%;
-            right: 0;
-            text-align: right;
-            z-index: 3;
+            .servicios-der-boton {
+                position: $rel;
+                text-align: right;
+                z-index: 3;
 
-            a {
-                margin-top: 15%;
+                a {
+                    @include box-shadow(4px, 4px, 8px, 0px, $color-gris-oscuro);
+                    margin-top: 15%;
+                }
+
+                &:hover {
+                    -webkit-animation: jello-vertical 1s ease both;
+                    animation: jello-vertical 1s ease both;
+                }
             }
+
         }
 
         .section-der-image {
@@ -96,22 +98,22 @@
                 p {
                     text-align: $cen;
                     line-height: 1.5;
-                    margin: 0 0 1.5rem 0;
+                    margin: 0;
                 }
 
                 &:last-of-type {
                     margin-bottom: 1.5rem;
                 }
-            }
 
-            .servicios-der-boton {
-                @include flex-center (column, center, center);
-                position: $rel;
-                margin: 2rem 0;
+                .servicios-der-boton {
+                    @include flex-center (column, center, center);
+                    position: $rel;
+                    margin: 2rem 0;
 
-                a {
-                    margin: 5% 0 8% 0;
-                    white-space: nowrap;
+                    a {
+                        margin: 5% 0 8% 0;
+                        white-space: nowrap;
+                    }
                 }
             }
 
@@ -163,18 +165,17 @@
                     margin: 0 0 1.5rem 0;
                 }
 
-            }
-
-            .servicios-der-boton {
-                @include flex-center (column, center, center);
-                white-space: nowrap;
-                text-align: $cen;
-                margin: 0 0 3rem 0;
-                position: $rel;
-
-                a {
-                    margin: 5% 0;
+                .servicios-der-boton {
+                    @include flex-center (column, center, center);
                     white-space: nowrap;
+                    text-align: $cen;
+                    margin: 0 0 2rem 0;
+                    position: $rel;
+
+                    a {
+                        margin: 5% 0;
+                        white-space: nowrap;
+                    }
                 }
             }
 
@@ -188,6 +189,8 @@
                 img {
                     width: auto;
                     object-fit: cover;
+                    position: $rel;
+                    left: -5rem;
                 }
 
                 .image-overlay-izq-serv {

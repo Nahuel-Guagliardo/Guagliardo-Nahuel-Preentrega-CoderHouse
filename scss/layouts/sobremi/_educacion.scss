@@ -31,23 +31,27 @@
 
             .instituciones {
                 @include flex-center (column, flex-start, flex-start);
+                @include dimension (100%, auto);
                 font-family: "roboto_regular";
-                font-size: 0.9rem;
+                font-size: 1.1rem;
                 color: $color-negro;
                 position: $rel;
                 z-index: 2;
+                overflow: hidden;
 
                 ol {
                     @include flex-center (column, flex-start, flex-start);
                     padding: 0;
                     margin: 3rem 0;
                     list-style: none;
+                    
 
                     li {
-                        @include flex-center (column, center, center);
                         position: $rel;
                         padding-left: 2.75rem;
                         margin-bottom: 1.4rem;
+                        overflow-wrap: break-word; 
+                        white-space: normal;
 
                         &::before {
                             @include dimension (0.6rem, 0.6rem);
@@ -59,6 +63,11 @@
                             transform: translateY(-50%);
                             background-color: $color-negro;
                             border-radius: 50%;
+                        }
+
+                        strong {
+
+                            margin-right: 0.2rem;
                         }
                     }
                 }
@@ -96,7 +105,6 @@
     }
 }
 
-
 // Media Querys Tableta
 
 @media only screen and (min-width: 501px) and (max-width: 960px) {
@@ -130,23 +138,32 @@
                 }
 
                 .instituciones {
+                    @include flex-center (column, center, center);
 
                     ol {
                         @include flex-center (column, center, center);
                         text-align: $cen;
                         padding: 0;
-                        margin: 3rem 0;
+                        margin: 3rem 0 2rem 0;
                         list-style: none;
-                    }
 
-                    li {
-                        position: $rel;
-                        padding-left: 1rem;
-                    }
+                        li {
+                            @include flex-center (column, center, center);
+                            position: $rel;
+                            padding-left: 1rem;
+                            white-space: wrap;
 
-                    .instituciones ol li::before {
-                        @include dimension (0.3rem, 0.3rem);
-                        margin-right: 0.5rem;
+                            strong {
+                                @include flex-center (column, center, center);
+                                white-space: wrap;
+                            }
+
+                            &::before {
+                                @include dimension (0.5rem, 0.5rem);
+                                margin-right: 0.5rem;
+                                top: 25%;
+                            }
+                        }
                     }
                 }
             }
@@ -161,6 +178,10 @@
                 img {
                     width: auto;
                     object-fit: cover;
+                }
+
+                .image-overlay-der-3 {
+                    @include ocultar;
                 }
             }
         }
@@ -196,13 +217,33 @@
                     margin: 0;
                 }
 
-                .instituciones ol{
-                    margin-top: 2rem;
+                .instituciones {
+                    @include flex-center (column, center, center);
 
-                    ol li::before {
-                        margin-right: 0.5rem;
-                        width: 0.5rem;
-                        height: 0.5rem;
+                    ol {
+                        @include flex-center (column, center, center);
+                        text-align: $cen;
+                        padding: 0;
+                        margin: 3rem 0 2rem 0;
+                        list-style: none;
+
+                        li {
+                            @include flex-center (column, center, center);
+                            position: $rel;
+                            padding-left: 1rem;
+                            white-space: wrap;
+
+                            strong {
+                                @include flex-center (column, center, center);
+                                white-space: wrap;
+                            }
+
+                            &::before {
+                                @include dimension (0.5rem, 0.5rem);
+                                margin-right: 0.5rem;
+                                top: 25%;
+                            }
+                        }
                     }
                 }
             }

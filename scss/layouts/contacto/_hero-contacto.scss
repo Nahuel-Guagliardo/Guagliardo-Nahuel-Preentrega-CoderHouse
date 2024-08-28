@@ -102,6 +102,10 @@
                     width: auto;
                     object-fit: cover;
                 }
+
+                .image-overlay-der-hero5 {
+                    @include ocultar;
+                }
             }
         }
     }
@@ -121,7 +125,7 @@
             .hero-texto-5 {
                 @include flex-center (column, center, center);
                 padding: 0 5%;
-                margin: 2rem 0;
+                margin: 3rem 0;
                 width: auto;
 
                 h1 {
@@ -133,7 +137,6 @@
                     text-align: $cen;
                     line-height: 1.5;
                     margin: 0;
-                    margin-bottom:1.5rem;
                 }
             }
 

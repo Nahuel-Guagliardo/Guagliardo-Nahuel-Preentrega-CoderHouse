@@ -1,0 +1,283 @@
+// Estilo de Sobre Mi / Experiencia / Desktop
+
+.experiencia-container-2 {
+    padding: 5% 10%;
+
+    .experiencia {
+        @include flex-center (column, center, center);
+
+        h2{
+            text-align: $cen;
+        }
+
+        p {
+            margin: 2rem 0 5rem 0;
+            width: 100%;
+            text-align: $cen;
+        }
+    }
+
+    .linea-tiempo-container {
+        position: $rel;
+
+        &::before {
+            content: '';
+            position: $abs;
+            left: 50%;
+            top: -1.5rem;
+            height: 100%;
+            width: 2px;
+            background-color: $color-gris-muy-oscuro;
+            transform: translateX(-50%);
+        }
+
+        .linea-tiempo-item {
+            position: $rel;
+            margin-bottom: 3rem;
+            display: flex;
+
+            .linea-tiempo-punto {
+                @include dimension (1rem, 1rem);
+                position: $abs;
+                left: 50%;
+                background-color: $color-gris-muy-oscuro;
+                border-radius: 50%;
+                transform: translateX(-50%);
+            }
+
+            .linea-tiempo-texto {
+                @include flex-center(row, flex-start, flex-start);
+                background-color: $color-blanco;
+                @include box-shadow(0.5rem, 0.5rem, 1rem, 0px, $color-gris-oscuro);
+                border: 1px solid $color-gris;
+                padding: 1.5rem;
+                border-radius: 0.5rem;
+                width: 100%;
+
+                .exp-image {
+
+                    img {
+                        @include dimension (auto, 10rem);
+                        border-radius: 0.5rem;
+                    }
+                }
+
+                .columna2 {
+                    @include flex-center(column, flex-start, flex-start);
+                    margin-left: 3rem;
+
+                    .año {
+                        text-align: $cen;
+                        font-family: "roboto_bold";
+                        font-size: 1rem;
+                        margin-bottom: 0.5rem;
+                    }
+
+                    .icono-titulo-experiencia {
+                        @include flex-center (row, center, flex-start);
+
+                        .icono-servicios {
+                            margin-bottom: 1rem;
+
+                            img {
+                                @include dimension (auto, 2rem);
+                                margin-right: 1.15rem;
+                            }
+                        }
+
+                        h3 {
+                            text-align: $cen;
+                            margin: 0;
+                        }
+                    }
+
+                    h4 {
+                        text-align: $cen;
+                    }
+
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .intro-parrafo {
+            padding: 2rem 0; 
+            position: $rel;
+            background-color: $color-blanco;
+
+            p {
+                font-size: 1.1rem;
+                text-align: center;
+
+            }
+
+        }
+
+        .boton-gris{
+            @include box-shadow(4px, 4px, 8px, 0px, $color-gris-oscuro);
+            border: none;
+            position: $rel;
+            margin: 0 auto 3rem auto; 
+            display: block;
+
+            &:hover {
+                -webkit-animation: jello-vertical 1s ease both;
+                animation: jello-vertical 1s ease both;
+            }
+
+        }
+
+    }
+}
+
+//Media Querys Tablet
+
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+
+    .experiencia-container-2 {
+        padding: 5% 5%;
+
+        .experiencia {
+
+            p {
+                margin-bottom: 2rem;
+            }
+        }
+
+        .linea-tiempo-container {
+            position: $rel;
+
+            .linea-tiempo-item {
+                position: $rel;
+                margin-bottom: 2rem;
+
+                .linea-tiempo-texto {
+
+                    .exp-image {
+                        margin-bottom: 1rem;
+
+                        img {
+                            @include dimension (auto, 8rem);
+                            border-radius: 0.5rem;
+                        }
+                    }
+
+                    .columna2 {
+                        margin-left: 1.5rem;
+
+                        .año {
+                            margin-bottom: 1rem;
+                        }
+
+                        .icono-titulo-experiencia {
+                            margin-bottom: 1rem;
+
+                            h3 {
+                                text-align: start;
+                            }
+                        }
+
+                        h4 {
+                            text-align: start;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//Media Querys Mobile
+
+@media only screen and (max-width: 500px) {
+
+    .experiencia-container-2 {
+        padding: 15% 5%;
+
+        .experiencia {
+
+            p {
+                margin-bottom: 2rem;
+            }
+        }
+
+        .linea-tiempo-container {
+            margin-bottom: 3rem;
+
+            .linea-tiempo-item {
+                position: $rel;
+                margin-bottom: 2rem;
+
+                .linea-tiempo-texto {
+                    @include flex-center (column, center, center);
+
+                    .exp-image {
+                        position: $rel;
+                        top: 2rem;
+                        margin-bottom: 1rem;
+
+                        img {
+                            @include dimension (auto, 6rem);
+                            border-radius: 0.5rem;
+                        }
+                    }
+
+                    .columna2 {
+                        @include flex-center (column, center, center);
+                        margin-left: 0;
+
+                        .año {
+                            position: $abs;
+                            top: 1.5rem;
+                            margin-bottom: 1rem;
+                        }
+
+                        .icono-titulo-experiencia {
+                            margin-top: 2rem;
+                            margin-bottom: 1rem;
+
+                            .icono-servicios {
+
+                                img {
+                                    @include dimension (auto, 1.5rem);
+                                    margin-right: 0.5rem;
+                                }
+                            }
+                        }
+
+                        h4 {
+                            font-size: 1rem;
+                            font-weight: bold;
+                        }
+
+                        p {
+                            text-align: $cen;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Media Querys Mobile
+
+@media only screen and (max-width: 250px) {
+
+    .icono-titulo-experiencia {
+
+        .icono-servicios {
+
+            img {
+                @include ocultar;
+            }
+        }
+
+        h3 {
+            font-size: 1.25rem;
+        }
+    }
+}

@@ -8,6 +8,9 @@
 @import "components/tarjetas-servicios";
 @import "components/tarjetas-portfolio";
 @import "components/filtros-portfolio";
+@import "components/modals-portfolio";
+@import "components/tarjetas_cursos";
+@import "components/modals-cert";
 
 @import "layouts/inicio/herosection-inicio";
 @import "layouts/inicio/acerca-inicio.scss";
@@ -23,6 +26,8 @@
 @import "layouts/sobremi/micamino";
 @import "layouts/sobremi/educacion";
 @import "layouts/sobremi/habilidades";
+@import "layouts/sobremi/certificados";
+@import "layouts/sobremi/experiencia";
 
 @import "layouts/servicios/hero-servicios";
 @import "layouts/servicios/section-servicios-der";
@@ -30,3 +35,4 @@
 
 @import "utilities/variables";
 @import "utilities/animaciones";
+@import "utilities/animacion-bienvenida";

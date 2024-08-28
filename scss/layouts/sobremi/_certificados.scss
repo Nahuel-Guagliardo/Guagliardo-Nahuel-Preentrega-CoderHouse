@@ -1,0 +1,65 @@
+// Estilo de Sobre Mi / Certificados / Desktop
+
+.certificados-container {
+    @include dimension (100%, auto);
+    padding: 5% 10%;
+
+    .certificados {
+        margin: 0;
+
+        h2 {
+            margin-bottom: 5rem;
+            text-align: $cen;
+        }
+
+        .certificados-tarjetas {
+            @include box-sizing;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 5rem;
+            column-gap: 1rem;
+            justify-items: $cen;
+        }
+    }
+}
+
+// Media Querys Tablet
+
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+
+
+    .certificados-container {
+        @include dimension (100%, auto);
+        padding: 3% 5%;
+
+        .certificados {
+
+            .certificados-tarjetas {
+                @include box-sizing;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                row-gap: 2rem;
+            }
+        }
+    }
+}
+
+// Media Querys Mobile
+
+@media only screen and (max-width: 501px) {
+
+
+    .certificados-container {
+        padding: 1% 5%;
+
+        .certificados {
+
+            .certificados-tarjetas {
+                @include box-sizing;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                row-gap: 2rem;
+            }
+        }
+    }
+}

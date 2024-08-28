@@ -5,9 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NG Diseño | Portfolio</title>
+    <!-- Metas -->
+    <meta name="description"
+        content="Explora mi portfolio de Diseño, En él vas a encontrar proyectos de Diseño Industrial, Diseño Gráfico, Ilustración y Diseño UX/UI y filtrarlos por categoría. ¿Listo para contactarme y empezar a trabajar juntos?">
+    <meta name="keywords"
+        content="Diseño, Diseño Industrial, Diseño Gráfico, Ilustración, Diseño UX/UI, Desarrollo Web, Portfolio Diseño, Diseñador Industrial, Diseñador Gráfico, Diseñador UX/UI, Desarrollador web, Ilustrador, Diseñador, Figma, Ui">
+    <meta name="telephone" content="+5492333489671">
+    <meta name="whatsapp" content="+5492333489671">
+    <meta name="author" content="Nahuel Guagliardo">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../imagenes/NG_favicon.png" type="image/x-icon">
     <!-- Boostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Css -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -42,19 +51,20 @@
 
     <!-- Hero Section -->
 
-    <section class="herosection-3-container">
+    <section class="herosection-3-container" id="arriba-port">
         <div class="hero3container">
             <div class="hero-texto3">
                 <h1>Portfolio</h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper elementum nibh ut
-                    aliquet.<br>
-                    Aliquam accumsan, lectus sed elementum ornare, ex felis vehicula neque, nec porttitor dolor
-                    nunc sed augue. Sed et neque scelerisque, imperdiet dui sed, auctor mauris. Sed euismod, diam ut
-                    aliquam lacinia, augue sapien pulvinar neque.
-                    Aliquam accumsan, lectus sed elementum ornare, ex felis vehicula neque, nec porttitor dolor
-                    nunc sed augue. Sed et neque scelerisque, imperdiet dui sed, auctor mauris. Sed euismod, diam ut
-                    aliquam lacinia, augue sapien pulvinar neque.
+                    A continuación te espera una selección de mis trabajos destacados, podrás filtrar según la categoría
+                    de Diseño que más te interese y conocer mis proyectos en profundidad.<br>
+                    Cada proyecto refleja mi recorrido profesional, desde mis inicios en el diseño industrial hasta mi
+                    evolución hacia el diseño gráfico, UX-UI, y más. Al explorar mis trabajos, verás cómo he aplicado y
+                    adaptado mis habilidades en diferentes disciplinas, siempre con un enfoque en soluciones prácticas y
+                    creativas. <br><br>Si te interesa ver cómo he llevado las ideas del papel a la realidad, este es el
+                    lugar
+                    para descubrirlo. ¡Sumérgete en mis proyectos y encontrá inspiración
+                    para los tuyos!
                 <p>
             </div>
             <div class="hero-image-3">
@@ -66,11 +76,11 @@
 
     <!-- Filtros Portfolio -->
 
-    <div class="portfolio-section">
+    <div id="portfolio" class="portfolio-section">
 
         <div class="portfolio-filtros-container">
+            <input type="checkbox" id="filtros-toggle" class="filtros-toggle">
             <div class="menu-mobile">
-                <input type="checkbox" id="filtros-toggle" class="filtros-toggle">
                 <label for="filtros-toggle" class="filtros-hamburguesa">
                     <img src="../imagenes/icono_hamburguesa.png" alt="Icono Menú Hamburguesa">
                     Filtros
@@ -90,162 +100,1501 @@
 
         <div class="portfolio-grid">
 
-            <div class="portfolio-tarjeta industrial animate__animated animate__bounceInRight">
-                <div class="portfolio-image">
-                    <img src="../imagenes/Trabajo-10.jpg" alt="Portada del Proyecto">
-                </div>
-                <div class="project-info">
-                    <h5>Proyecto Industrial 1</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <a href="#" class="boton-gris">Ver más</a>
-                </div>
-            </div>
-
-            <div class="portfolio-tarjeta grafico animate__animated animate__bounceInRight">
-                <div class="portfolio-image">
-                    <img src="../imagenes/Trabajo-3.jpg" alt="Portada del Proyecto">
-                </div>
-                <div class="project-info">
-                    <h5>Proyecto Gráfico 1</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <a href="#" class="boton-gris">Ver más</a>
-                </div>
-            </div>
+            <!-- SoftBox Nuevas Funciones-->
 
             <div class="portfolio-tarjeta ux-ui animate__animated animate__bounceInRight">
                 <div class="portfolio-image">
-                    <img src="../imagenes/Trabajo-14.jpg" alt="Portada del Proyecto">
+                    <img src="../imagenes/portfolio/portadas/soft2.jpg"
+                        alt="Portada de Proyecto: SoftBox Nuevas Funciones">
                 </div>
                 <div class="project-info">
-                    <h5>Proyecto UX/UI 1</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <a href="#" class="boton-gris">Ver más</a>
+                    <h5>SoftBox - Incorporacion de funciones en el Software</h5>
+                    <p>Creación de animaciones vectoriales y nuevas secciones en la web para mostrar las nuevas
+                        funcionalidades </p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal33">Ver más</a>
                 </div>
             </div>
 
-            <div class="portfolio-tarjeta ilustracion animate__animated animate__bounceInRight">
-                <div class="portfolio-image">
-                    <img src="../imagenes/Trabajo-2.jpg" alt="Portada del Proyecto">
-                </div>
-                <div class="project-info">
-                    <h5>Ilustración 1</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <a href="#" class="boton-gris">Ver más</a>
-                </div>
-            </div>
-
-            <div class="portfolio-tarjeta industrial animate__animated animate__bounceInRight">
-                <div class="portfolio-image">
-                    <img src="../imagenes/Trabajo-8.jpg" alt="Portada del Proyecto">
-                </div>
-                <div class="project-info">
-                    <h5>Proyecto Industrial 2</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <a href="#" class="boton-gris">Ver más</a>
-                </div>
-            </div>
-
-            <div class="portfolio-tarjeta grafico animate__animated animate__bounceInRight">
-                <div class="portfolio-image">
-                    <img src="../imagenes/Trabajo-5.jpg" alt="Portada del Proyecto">
-                </div>
-                <div class="project-info">
-                    <h5>Proyecto Gráfico 2</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <a href="#" class="boton-gris">Ver más</a>
-                </div>
-            </div>
+            <!-- SoftBox -->
 
             <div class="portfolio-tarjeta ux-ui animate__animated animate__bounceInRight">
                 <div class="portfolio-image">
-                    <img src="../imagenes/Trabajo-1.jpg" alt="Portada del Proyecto">
+                    <img src="../imagenes/portfolio/portadas/soft.jpg" alt="Portada de Proyecto: SoftBox">
                 </div>
                 <div class="project-info">
-                    <h5>Proyecto UX/UI 2</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <a href="#" class="boton-gris">Ver más</a>
+                    <h5>SoftBox - Software de básculas para pesaje</h5>
+                    <p>Rediseño de la página web y actualización de la imagen de la empresa</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal32">Ver más</a>
                 </div>
             </div>
 
-            <div class="portfolio-tarjeta ilustracion animate__animated animate__bounceInRight">
-                <div class="portfolio-image">
-                    <img src="../imagenes/Trabajo-9.jpg" alt="Portada del Proyecto">
-                </div>
-                <div class="project-info">
-                    <h5>Ilustración 2</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <a href="#" class="boton-gris">Ver más</a>
-                </div>
-            </div>
-
-            <div class="portfolio-tarjeta industrial animate__animated animate__bounceInRight">
-                <div class="portfolio-image">
-                    <img src="../imagenes/Trabajo-6.jpg" alt="Portada del Proyecto">
-                </div>
-                <div class="project-info">
-                    <h5>Proyecto Industrial 3</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <a href="#" class="boton-gris">Ver más</a>
-                </div>
-            </div>
+            <!-- Comodín Comercial -->
 
             <div class="portfolio-tarjeta grafico animate__animated animate__bounceInRight">
                 <div class="portfolio-image">
-                    <img src="../imagenes/Trabajo-12.jpg" alt="Portada del Proyecto">
+                    <img src="../imagenes/portfolio/portadas/comodin.jpg" alt="Portada de Proyecto: Comodín Comercial">
                 </div>
                 <div class="project-info">
-                    <h5>Proyecto Gráfico 3</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <a href="#" class="boton-gris">Ver más</a>
+                    <h5>Comodín Comercial</h5>
+                    <p>Diseño de identidad visual para empresa de servicios de consultoria</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal31">Ver más</a>
                 </div>
             </div>
+
+            <!-- Mi Taller -->
 
             <div class="portfolio-tarjeta ux-ui animate__animated animate__bounceInRight">
                 <div class="portfolio-image">
-                    <img src="../imagenes/Trabajo-7.jpg" alt="Portada del Proyecto">
+                    <img src="../imagenes/portfolio/portadas/taller.jpg" alt="Portada de Proyecto: Mi Taller">
                 </div>
                 <div class="project-info">
-                    <h5>Proyecto UX/UI 3</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <a href="#" class="boton-gris">Ver más</a>
+                    <h5>Mi Taller</h5>
+                    <p>Proyecto de aplicación celular para asistencia vehicular</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal30">Ver más</a>
                 </div>
             </div>
 
-            <div class="portfolio-tarjeta ilustracion animate__animated animate__bounceInRight">
-                <div class="portfolio-image">
-                    <img src="../imagenes/Trabajo-11.jpg" alt="Portada del Proyecto">
-                </div>
-                <div class="project-info">
-                    <h5>Ilustración 3</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <a href="#" class="boton-gris">Ver más</a>
-                </div>
-            </div>
-
-            <div class="portfolio-tarjeta industrial animate__animated animate__bounceInRight">
-                <div class="portfolio-image">
-                    <img src="../imagenes/Trabajo-4.jpg" alt="Portada del Proyecto">
-                </div>
-                <div class="project-info">
-                    <h5>Proyecto Industrial 4</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <a href="#" class="boton-gris">Ver más</a>
-                </div>
-            </div>
+            <!-- Arquitectura Moderna -->
 
             <div class="portfolio-tarjeta grafico animate__animated animate__bounceInRight">
                 <div class="portfolio-image">
-                    <img src="../imagenes/Trabajo-13.jpg" alt="Portada del Proyecto">
+                    <img src="../imagenes/portfolio/portadas/arq.jpg"
+                        alt="Portada de Proyecto: Muestra Fotográfica: Arquitectura Moderna en Mar del Plata">
                 </div>
                 <div class="project-info">
-                    <h5>Proyecto Gráfico 4</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <a href="#" class="boton-gris">Ver más</a>
+                    <h5>Muestra Fotográfica: Arquitectura Moderna en Mar del Plata</h5>
+                    <p>Diseño de gráfica para la muestra al aire libre en el paseo de Playa Grande</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal29">Ver más</a>
+                </div>
+            </div>
+
+            <!-- Inauguración Mar de Caracoles -->
+
+            <div class="portfolio-tarjeta industrial animate__animated animate__bounceInRight">
+                <div class="portfolio-image">
+                    <img src="../imagenes/portfolio/portadas/mar.jpg"
+                        alt="Portada de Proyecto: Inauguración Mar de Caracoles">
+                </div>
+                <div class="project-info">
+                    <h5>Inauguración Mar de Caracoles</h5>
+                    <p>Apertura de la muestra accesible en el segundo piso del Museo de Ciencias Naturales del
+                        Municipio de General Pueyrredon</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal28">Ver más</a>
+                </div>
+            </div>
+
+            <!-- Mar de Caracoles -->
+
+            <div class="portfolio-tarjeta industrial animate__animated animate__bounceInRight">
+                <div class="portfolio-image">
+                    <img src="../imagenes/portfolio/portadas/caracoles.jpg" alt="Portada de Proyecto: Mar de Caracoles">
+                </div>
+                <div class="project-info">
+                    <h5>Mar de Caracoles</h5>
+                    <p>Diseño y Diagramación de Sala de Exposición y Vitrinas para el Museo de Ciencias Naturales del
+                        Municipio de General Pueyrredon</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal27">Ver más</a>
+                </div>
+            </div>
+
+            <!-- Vitrinas Scaglia -->
+
+            <div class="portfolio-tarjeta industrial animate__animated animate__bounceInRight">
+                <div class="portfolio-image">
+                    <img src="../imagenes/portfolio/portadas/vitrinas.jpg"
+                        alt="Portada de Proyecto: Vitrinas Museo Scaglia">
+                </div>
+                <div class="project-info">
+                    <h5>Acondicionamiento Vitrinas Museo Scaglia</h5>
+                    <p>Diseño de piezas gráficas para acondicionar las vitrinas del Museo de Ciencias Naturales</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal26">Ver más</a>
+                </div>
+            </div>
+
+            <!-- Señaletica Scaglia -->
+
+            <div class="portfolio-tarjeta grafico animate__animated animate__bounceInRight">
+                <div class="portfolio-image">
+                    <img src="../imagenes/portfolio/portadas/señaletica.jpg"
+                        alt="Portada de Proyecto: Señaletica Scaglia">
+                </div>
+                <div class="project-info">
+                    <h5>Señalética Museo Scaglia</h5>
+                    <p>Diseño de Señalética para el Museo de Ciencias Naturales del Municipio de General Pueyrredon</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal25">Ver más</a>
+                </div>
+            </div>
+
+            <!-- Laboratorio Excellens -->
+
+            <div class="portfolio-tarjeta industrial animate__animated animate__bounceInRight">
+                <div class="portfolio-image">
+                    <img src="../imagenes/portfolio/portadas/excellens.jpg"
+                        alt="Portada de Proyecto: Laboratorio Excellens">
+                </div>
+                <div class="project-info">
+                    <h5>Laboratorio Excellens</h5>
+                    <p>Diseño de Instalaciones y Mobiliario para fábrica de lentes</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal24">Ver más</a>
+                </div>
+            </div>
+
+
+            <!-- Sabio Savia -->
+
+            <div class="portfolio-tarjeta grafico animate__animated animate__bounceInRight">
+                <div class="portfolio-image">
+                    <img src="../imagenes/portfolio/portadas/sabio.jpg" alt="Portada de Proyecto: Sabio Savia">
+                </div>
+                <div class="project-info">
+                    <h5>Sabio Savia</h5>
+                    <p>Diseño de identidad visual para vivero boutique</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal23">Ver más</a>
+                </div>
+            </div>
+
+            <!-- Pablo Caffi -->
+
+            <div class="portfolio-tarjeta grafico animate__animated animate__bounceInRight">
+                <div class="portfolio-image">
+                    <img src="../imagenes/portfolio/portadas/pablo.jpg" alt="Portada de Proyecto: Pablo Caffi">
+                </div>
+                <div class="project-info">
+                    <h5>Pablo Caffi</h5>
+                    <p>Diseño de identidad visual para asesor de ventas de equipos de pesaje</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal22">Ver más</a>
+                </div>
+            </div>
+
+            <!-- El Maná -->
+
+            <div class="portfolio-tarjeta grafico animate__animated animate__bounceInRight">
+                <div class="portfolio-image">
+                    <img src="../imagenes/portfolio/portadas/mana.jpg" alt="Portada de Proyecto: El Maná">
+                </div>
+                <div class="project-info">
+                    <h5>El Maná</h5>
+                    <p>Diseño de identidad visual para casa quinta</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal21">Ver más</a>
+                </div>
+            </div>
+
+            <!-- On Sex-Shop-->
+
+            <div class="portfolio-tarjeta grafico animate__animated animate__bounceInRight">
+                <div class="portfolio-image">
+                    <img src="../imagenes/portfolio/portadas/on.jpg" alt="Portada de Proyecto: On Sex-Shop">
+                </div>
+                <div class="project-info">
+                    <h5>On Sex-Shop</h5>
+                    <p>Diseño de identidad visual para tienda de productos eróticos</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal20">Ver más</a>
+                </div>
+            </div>
+
+            <!-- Alma Showroom-->
+
+            <div class="portfolio-tarjeta grafico animate__animated animate__bounceInRight">
+                <div class="portfolio-image">
+                    <img src="../imagenes/portfolio/portadas/alma.jpg" alt="Portada de Proyecto: Alma Showroom">
+                </div>
+                <div class="project-info">
+                    <h5>Alma Showroom</h5>
+                    <p>Diseño de identidad visual para emprendimiento de venta de ropa</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal19">Ver más</a>
+                </div>
+            </div>
+
+            <!-- Robles Suspensión-->
+
+            <div class="portfolio-tarjeta grafico animate__animated animate__bounceInRight">
+                <div class="portfolio-image">
+                    <img src="../imagenes/portfolio/portadas/robles.jpg"
+                        alt="Portada de Proyecto: Robles Suspensión - Tren Delantero">
+                </div>
+                <div class="project-info">
+                    <h5>Robles Suspensión</h5>
+                    <p>Diseño de identidad visual para taller mecánico especializado en suspensión y tren delantero</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal18">Ver más</a>
+                </div>
+            </div>
+
+            <!-- Nexos-->
+
+            <div class="portfolio-tarjeta grafico animate__animated animate__bounceInRight">
+                <div class="portfolio-image">
+                    <img src="../imagenes/portfolio/portadas/nexos.jpg"
+                        alt="Portada de Proyecto: Nexos Atención Infanto - Juvenil">
+                </div>
+                <div class="project-info">
+                    <h5>Nexos | Atención Infanto - Juvenil</h5>
+                    <p>Diseño de identidad visual para equipo multidisciplinario de la salud</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal17">Ver más</a>
+                </div>
+            </div>
+
+            <!-- Nemel Deco-Home-->
+
+            <div class="portfolio-tarjeta grafico animate__animated animate__bounceInRight">
+                <div class="portfolio-image">
+                    <img src="../imagenes/portfolio/portadas/nemel.jpg" alt="Portada de Proyecto: Nemel Deco-Home">
+                </div>
+                <div class="project-info">
+                    <h5>Nemel Deco-Home</h5>
+                    <p>Diseño de identidad visual para emprendimiento de decoración</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal16">Ver más</a>
+                </div>
+            </div>
+
+            <!-- Lámina Aixa Franke -->
+
+            <div class="portfolio-tarjeta ilustracion animate__animated animate__bounceInRight">
+                <div class="portfolio-image">
+                    <img src="../imagenes/portfolio/portadas/aixa.jpg" alt="Portada de Proyecto: Lámina Aixa Franke">
+                </div>
+                <div class="project-info">
+                    <h5>Mercedes de Aixa Franke</h5>
+                    <p>Lámina realizada a pedido de la piloto de carreras para entregar a sus sponsors</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal15">Ver más</a>
+                </div>
+            </div>
+
+            <!-- Ilustraciones de Autos de Rapido y Furioso-->
+
+            <div class="portfolio-tarjeta ilustracion animate__animated animate__bounceInRight">
+                <div class="portfolio-image">
+                    <img src="../imagenes/portfolio/portadas/rapido.jpg"
+                        alt="Portada de Proyecto: Ilustraciones Autos de Rápido y Furioso">
+                </div>
+                <div class="project-info">
+                    <h5>Autos Rápido y Furioso</h5>
+                    <p>Colección de Ilustraciones de la famosa saga de películas en tableta gráfica</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal14">Ver más</a>
+                </div>
+            </div>
+
+            <!-- Mockups de Ilustraciones -->
+
+            <div class="portfolio-tarjeta ilustracion animate__animated animate__bounceInRight">
+                <div class="portfolio-image">
+                    <img src="../imagenes/portfolio/portadas/mockups.jpg"
+                        alt="Portada de Proyecto: Mockups de Ilustraciones">
+                </div>
+                <div class="project-info">
+                    <h5>Mockups de Ilustraciones</h5>
+                    <p>Mockups de dibujos digitales realizados con tableta gráfica</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal13">Ver más</a>
+                </div>
+            </div>
+
+            <!-- Ilustraciones Autos Peliculas -->
+
+            <div class="portfolio-tarjeta ilustracion animate__animated animate__bounceInRight">
+                <div class="portfolio-image">
+                    <img src="../imagenes/portfolio/portadas/Auto-pel.jpg"
+                        alt="Portada de Proyecto: Ilustraciones Autos de Películas">
+                </div>
+                <div class="project-info">
+                    <h5>Autos de Películas</h5>
+                    <p>Ilustraciones digitales con tableta gráfica de vehículos icónicos</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal12">Ver más</a>
+                </div>
+            </div>
+
+            <!-- Ilustraciones -->
+
+            <div class="portfolio-tarjeta ilustracion animate__animated animate__bounceInRight">
+                <div class="portfolio-image">
+                    <img src="../imagenes/portfolio/portadas/autos-vect.jpg"
+                        alt="Portada de Proyecto: Ilustraciones Vectoriales de Vehículos">
+                </div>
+                <div class="project-info">
+                    <h5>Vehículos vectoriales</h5>
+                    <p>Ilustraciones de autos en vectores, realizados con CorelDraw</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal11">Ver más</a>
+                </div>
+            </div>
+
+            <!-- Alto - Caseta de Guardavidas -->
+
+            <div class="portfolio-tarjeta industrial animate__animated animate__bounceInRight">
+                <div class="portfolio-image">
+                    <img src="../imagenes/portfolio/portadas/alto.jpg"
+                        alt="Portada de Proyecto: Alto - Caseta de Guardavidas">
+                </div>
+                <div class="project-info">
+                    <h5>Alto - Casilla de Guardavidas</h5>
+                    <p>Proyecto de Graduación - Caseta de Guardavidas transportable</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal10">Ver más</a>
+                </div>
+            </div>
+
+            <!-- Camión de Rescate -->
+
+            <div class="portfolio-tarjeta industrial animate__animated animate__bounceInRight">
+                <div class="portfolio-image">
+                    <img src="../imagenes/portfolio/portadas/rescate.jpg"
+                        alt="Portada de Proyecto: Camión de Rescate para Inundaciones">
+                </div>
+                <div class="project-info">
+                    <h5>Vehículo de Rescate y Atención Primaria</h5>
+                    <p>Diseño de camión anfibio de rescate para inundaciones con modulo de atención in situ</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal9">Ver más</a>
+                </div>
+            </div>
+
+            <!-- Cabina Información Turistica -->
+
+            <div class="portfolio-tarjeta industrial animate__animated animate__bounceInRight">
+                <div class="portfolio-image">
+                    <img src="../imagenes/portfolio/portadas/cabina-info.jpg"
+                        alt="Portada de Proyecto: Cabina Información Turistica para MGP">
+                </div>
+                <div class="project-info">
+                    <h5>Cabina de Información Turistica</h5>
+                    <p>Diseño de módulo de atención al turista para la Municipalidad de General Pueyrredon</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal8">Ver más</a>
+                </div>
+            </div>
+
+            <!-- Modelado llanta Seat Ibiza -->
+
+            <div class="portfolio-tarjeta industrial animate__animated animate__bounceInRight">
+                <div class="portfolio-image">
+                    <img src="../imagenes/portfolio/portadas/llanta.jpg"
+                        alt="Portada de Proyecto: Modelado LLanta Seat Ibiza">
+                </div>
+                <div class="project-info">
+                    <h5>Llanta Seat Ibiza</h5>
+                    <p>Modelado de llanta para cátedra de Informática de la UNMDP</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal7">Ver más</a>
+                </div>
+            </div>
+
+            <!-- Caseta Artesanos Santa Clara -->
+
+            <div class="portfolio-tarjeta industrial animate__animated animate__bounceInRight">
+                <div class="portfolio-image">
+                    <img src="../imagenes/portfolio/portadas/caseta-art.jpg"
+                        alt="Portada de Proyecto: Caseta Artesanos Santa Clara del Mar">
+                </div>
+                <div class="project-info">
+                    <h5>Puestos para Artesanos de Santa Clara del Mar</h5>
+                    <p>Proyecto seleccionado de la UNMDP para la implementación en el Municipio de Mar Chiquita</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal6">Ver más</a>
+                </div>
+            </div>
+
+            <!-- Carro Recuperadores -->
+
+            <div class="portfolio-tarjeta industrial animate__animated animate__bounceInRight">
+                <div class="portfolio-image">
+                    <img src="../imagenes/portfolio/portadas/recuperadores.jpg"
+                        alt="Portada de Proyecto: Carro Recuperadores urbanos">
+                </div>
+                <div class="project-info">
+                    <h5>Carro para Recuperadores Urbanos</h5>
+                    <p>Proyecto realizado para la Municipalidad de General Pueyrredon</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal5">Ver más</a>
+                </div>
+            </div>
+
+            <!-- Robot 3D -->
+
+            <div class="portfolio-tarjeta industrial animate__animated animate__bounceInRight">
+                <div class="portfolio-image">
+                    <img src="../imagenes/portfolio/portadas/robot.jpg" alt="Portada de Proyecto: Modelado de Robot">
+                </div>
+                <div class="project-info">
+                    <h5>Robot 3D</h5>
+                    <p>Modelado de Robot para Escena Animada</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal4">Ver más</a>
+                </div>
+            </div>
+
+            <!-- Ilustraciones -->
+
+            <div class="portfolio-tarjeta ilustracion animate__animated animate__bounceInRight">
+                <div class="portfolio-image">
+                    <img src="../imagenes/portfolio/portadas/ilustracion.jpg"
+                        alt="Portada de Proyecto: Ilustraciones Digitales">
+                </div>
+                <div class="project-info">
+                    <h5>Ilustraciones Digitales</h5>
+                    <p>Algunas Ilustraciones realizadas con tableta digital</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal3">Ver más</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta Plotter Mdp -->
+
+            <div class="portfolio-tarjeta ilustracion animate__animated animate__bounceInRight">
+                <div class="portfolio-image">
+                    <img src="../imagenes/portfolio/portadas/plotter-mdp.jpg"
+                        alt="Portada de Proyecto: Plotter Mar del Plata">
+                </div>
+                <div class="project-info">
+                    <h5>Diseño de Plotter Silueta Mar del Plata</h5>
+                    <p>Proyecto Freelancer para oficinas de la constructora Developer</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal2">Ver más</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta Silverblade -->
+
+            <div class="portfolio-tarjeta industrial animate__animated animate__bounceInRight">
+                <div class="portfolio-image">
+                    <img src="../imagenes/portfolio/portadas/Silverblade.jpg"
+                        alt="Portada del Proyecto: Silverblade 250">
+                </div>
+                <div class="project-info">
+                    <h5>Rediseño Silverblade 250</h5>
+                    <p>Proyecto de la UNMDP para la marca de motos Benelli</p>
+                    <a href="#" class="boton-gris" data-bs-toggle="modal" data-bs-target="#portfolioModal1">Ver más</a>
                 </div>
             </div>
 
         </div>
     </div>
+
+    <!-- Modals -->
+
+    <!-- Modal SoftBox Nuevas Funciones -->
+
+    <div class="modal fade" id="portfolioModal33" tabindex="-1" aria-labelledby="portfolioModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_3.png" alt="Logo Diseño Ux-Ui" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">SoftBox - Incorporacion de funciones en el Software
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Creación de animaciones vectoriales y nuevas secciones en la web para mostrar las nuevas
+                        funcionalidades
+                    </p>
+                    <img src="../imagenes/portfolio/soft2/1.jpg" alt="Presentación Proyecto SoftBox Nuevas Funciones"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/soft2/2.jpg" alt="Contexto de aplicación de las nuevas funciones"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/soft2/3.jpg" alt="Explicación animaciones" class="img-fluid">
+
+                    <iframe style="border: none; width: 100%; aspect-ratio: 16 / 9;"
+                        src="https://www.youtube.com/embed/flzCImk1kUI"
+                        title="SoftBox - Sistema de pesaje sin la intervención de operador de báscula" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <iframe style="border: none; width: 100%; aspect-ratio: 16 / 9;"
+                        src="https://www.youtube.com/embed/cLUBaGjng4I"
+                        title="SoftBox - Sistema de pesaje para recicladoras" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <img src="../imagenes/portfolio/soft2/4.jpg" alt="Presentación agregados página web"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/soft2/5.jpg" alt="Presentación agregados página web 2" class="img-fluid">
+                    <img src="../imagenes/portfolio/soft2/6.jpg" alt="Presentación agregados página web 3" class="img-fluid">
+                    <img src="../imagenes/portfolio/soft2/7.jpg" alt="Presentación agregados página web 4" class="img-fluid">
+                    <img src="../imagenes/portfolio/soft/10.jpg" alt="Imagen Gracias por ver el proyecto"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal SoftBox -->
+
+    <div class="modal fade" id="portfolioModal32" tabindex="-1" aria-labelledby="portfolioModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_3.png" alt="Logo Diseño Ux-Ui" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">SoftBox - Software de básculas para pesaje</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Rediseño de la página web y actualización de la imagen de la empresa</p>
+                    <img src="../imagenes/portfolio/soft/1.jpg" alt="Presentación Proyecto SoftBox" class="img-fluid">
+                    <img src="../imagenes/portfolio/soft/2.jpg" alt="Contexto de aplicación" class="img-fluid">
+                    <img src="../imagenes/portfolio/soft/3.jpg" alt="Brenchmarking" class="img-fluid">
+                    <img src="../imagenes/portfolio/soft/4.jpg" alt="CardSorting y Arquitectura de la Información"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/soft/5.jpg" alt="Prototipo de Baja Fidelidad" class="img-fluid">
+                    <img src="../imagenes/portfolio/soft/6.jpg" alt="UI Kit" class="img-fluid">
+                    <img src="../imagenes/portfolio/soft/7.jpg" alt="Aplicaciones Responsive" class="img-fluid">
+                    <img src="../imagenes/portfolio/soft/8.jpg" alt="Presentación del sitio" class="img-fluid">
+                    <img src="../imagenes/portfolio/soft/9.jpg" alt="Presentación del sitio 2" class="img-fluid">
+                    <img src="../imagenes/portfolio/soft/10.jpg" alt="Imagen Gracias por ver el proyecto"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Comodín Comercial -->
+
+    <div class="modal fade" id="portfolioModal31" tabindex="-1" aria-labelledby="portfolioModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_2.png" alt="Logo Diseño Gráfico" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">Comodín Comercial</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Diseño de identidad visual para empresa de servicios de consultoria</p>
+                    <img src="../imagenes/portfolio/comodin/1.gif" alt="Gif Presentación Proyecto Comodín Comercial"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/comodin/2.jpg" alt="Presentación Proyecto Comodín Comercial"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/comodin/3.jpg" alt="Moodboard Comodín Comercial" class="img-fluid">
+                    <img src="../imagenes/portfolio/comodin/4.jpg" alt="Paleta Cromática Comodín Comercial"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/comodin/5.jpg" alt="Tipógrafía Comodín Comercial" class="img-fluid">
+                    <img src="../imagenes/portfolio/comodin/6.jpg" alt="Logo Comodín Comercial" class="img-fluid">
+                    <img src="../imagenes/portfolio/comodin/7.gif" alt="Gif Aplicaciones Comodín Comercial"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/comodin/8.jpg" alt="Aplicaciones Comodín Comercial"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/comodin/9.jpg" alt="Social Media Comodín Comercial"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/comodin/10.jpg" alt="Social Media Comodín Comercial 2"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/comodin/11.jpg" alt="Mockups Comodín Comercial" class="img-fluid">
+                    <img src="../imagenes/portfolio/comodin/12.jpg" alt="Mockups Comodín Comercial 2" class="img-fluid">
+                    <img src="../imagenes/portfolio/comodin/13.jpg" alt="Imagen Gracias por ver el proyecto"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Mi Taller -->
+
+    <div class="modal fade" id="portfolioModal30" tabindex="-1" aria-labelledby="portfolioModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_3.png" alt="Logo Diseño Ux-Ui" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">Mi Taller</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Proyecto de aplicación celular para asistencia vehicular</p>
+                    <img src="../imagenes/portfolio/taller/1.jpg" alt="Presentación Proyecto Mi Taller"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/taller/2.jpg" alt="Metodología del Proyecto" class="img-fluid">
+                    <img src="../imagenes/portfolio/taller/3.jpg" alt="Contexto del Proyecto" class="img-fluid">
+                    <img src="../imagenes/portfolio/taller/4.jpg" alt="Análisis Competencia" class="img-fluid">
+                    <img src="../imagenes/portfolio/taller/5.jpg" alt="User Personas" class="img-fluid">
+                    <img src="../imagenes/portfolio/taller/6.jpg" alt="User Personas 2" class="img-fluid">
+                    <img src="../imagenes/portfolio/taller/7.jpg" alt="Storytelling" class="img-fluid">
+                    <img src="../imagenes/portfolio/taller/8.jpg" alt="MVP" class="img-fluid">
+                    <img src="../imagenes/portfolio/taller/9.jpg" alt="Matriz de Similitud" class="img-fluid">
+                    <img src="../imagenes/portfolio/taller/10.jpg" alt="Dendograma" class="img-fluid">
+                    <img src="../imagenes/portfolio/taller/11.jpg" alt="Arquitectura de la información"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/taller/12.jpg" alt="User flow" class="img-fluid">
+                    <img src="../imagenes/portfolio/taller/13.jpg" alt="User flow 2" class="img-fluid">
+                    <img src="../imagenes/portfolio/taller/14.jpg" alt="Wireframes" class="img-fluid">
+                    <img src="../imagenes/portfolio/taller/15.jpg" alt="Wireframes 2" class="img-fluid">
+                    <img src="../imagenes/portfolio/taller/16.jpg" alt="Moodboard" class="img-fluid">
+                    <img src="../imagenes/portfolio/taller/17.jpg" alt="Icon Design" class="img-fluid">
+                    <img src="../imagenes/portfolio/taller/18.jpg" alt="UI Kit" class="img-fluid">
+                    <img src="../imagenes/portfolio/taller/19.jpg" alt="UI Kit 2" class="img-fluid">
+                    <img src="../imagenes/portfolio/taller/20.jpg" alt="Recomendaciones" class="img-fluid">
+                    <img src="../imagenes/portfolio/taller/21.jpg" alt="Métricas" class="img-fluid">
+                    <img src="../imagenes/portfolio/taller/22.jpg" alt="Heurísticas" class="img-fluid">
+                    <img src="../imagenes/portfolio/taller/23.jpg" alt="Presentación Prototipo Interactivo"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/taller/24.jpg" alt="Presentación Prototipo Interactivo 2"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/taller/25.jpg" alt="Presentación Prototipo Interactivo 3"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/taller/26.jpg" alt="Presentación Prototipo Interactivo 4"
+                        class="img-fluid">
+                    <iframe style="border: none; width: 100%; aspect-ratio: 4 / 3;"
+                        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F5mngy2wtRId1SCS5IB4fSQ%2FEntrega-Guagliardo-Nahuel%3Fpage-id%3D802%253A10234%26node-id%3D830-10892%26viewport%3D718%252C425%252C0.05%26t%3Dfbk2udbqDUREtU73-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26starting-point-node-id%3D830%253A10892"
+                        allowfullscreen></iframe>
+                    <img src="../imagenes/portfolio/taller/27.jpg" alt="Imagen Gracias por ver el proyecto"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Vitrinas Museo Scaglia -->
+
+    <div class="modal fade" id="portfolioModal29" tabindex="-1" aria-labelledby="portfolioModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_2.png" alt="Logo Diseño Gráfico" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">Muestra Fotográfica: Arquitectura Moderna en Mar
+                        del Plata</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Diseño de gráfica para la muestra al aire libre en el paseo de Playa Grande</p>
+                    <img src="../imagenes/portfolio/arq/1.jpg"
+                        alt="Presentación Proyecto Arquitectura Moderna en Mar del Plata" class="img-fluid">
+                    <img src="../imagenes/portfolio/arq/2.jpg"
+                        alt="Presentación Proyecto Arquitectura Moderna en Mar del Plata 2" class="img-fluid">
+                    <img src="../imagenes/portfolio/arq/3.jpg"
+                        alt="Presentación Proyecto Arquitectura Moderna en Mar del Plata 3" class="img-fluid">
+                    <img src="../imagenes/portfolio/arq/4.jpg" alt="Imagen instalación gráfica" class="img-fluid">
+                    <img src="../imagenes/portfolio/arq/5.jpg" alt="Imagen instalación gráfica 2" class="img-fluid">
+                    <img src="../imagenes/portfolio/arq/6.jpg" alt="Imagen instalación gráfica 3" class="img-fluid">
+                    <img src="../imagenes/portfolio/arq/7.jpg" alt="Imagen Gracias por ver el proyecto"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Inauguración Mar de Caracoles -->
+
+    <div class="modal fade" id="portfolioModal28" tabindex="-1" aria-labelledby="portfolioModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_1.png" alt="Logo Diseño Industrial" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">Inauguración Mar de Caracoles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Apertura de la muestra accesible en el segundo piso del Museo de Ciencias Naturales del
+                        Municipio de General Pueyrredon</p>
+                    <img src="../imagenes/portfolio/mar/1.jpg" alt="Imagen Muestra Mar de Caracoles"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/mar/2.jpg" alt="Imagen Muestra Mar de Caracoles 2"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/mar/3.jpg" alt="Imagen Muestra Mar de Caracoles 3"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/mar/4.jpg" alt="Imagen Muestra Mar de Caracoles 4"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/mar/5.jpg" alt="Imagen Muestra Mar de Caracoles 5"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/mar/6.jpg" alt="Imagen Muestra Mar de Caracoles 6"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/mar/7.jpg" alt="Imagen Muestra Mar de Caracoles 7"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/mar/8.jpg" alt="Imagen Muestra Mar de Caracoles 8"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/mar/9.jpg" alt="Imagen Muestra Mar de Caracoles 9"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/mar/10.jpg" alt="Imagen Muestra Mar de Caracoles 10"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/mar/11.jpg" alt="Imagen Muestra Mar de Caracoles 11"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/mar/12.jpg" alt="Imagen Muestra Mar de Caracoles 12"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/gracias.jpg" alt="Imagen Gracias por ver el proyecto"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Mar de Caracoles -->
+
+    <div class="modal fade" id="portfolioModal27" tabindex="-1" aria-labelledby="portfolioModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_1.png" alt="Logo Diseño Industrial" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">Mar de Caracoles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Diseño y Diagramación de Sala de Exposición y Vitrinas para el Museo de Ciencias Naturales del
+                        Municipio de General Pueyrredon</p>
+                    <img src="../imagenes/portfolio/caracoles/1.jpg" alt="Presentación Proyecto Mar de Caracoles"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/caracoles/2.jpg" alt="Infografía con el diseño del espacio"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/caracoles/3.jpg" alt="Renders de la diagramación de Gigantografías"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/caracoles/4.jpg" alt="Renders de la diagramación de la TV"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/caracoles/5.jpg"
+                        alt="Renders de la Estación Táctil y Vitrinas Horizontales" class="img-fluid">
+                    <img src="../imagenes/portfolio/caracoles/6.jpg"
+                        alt="Renders del sector ascensor y diseño de plotter para ventanal" class="img-fluid">
+                    <img src="../imagenes/portfolio/caracoles/7.jpg" alt="Renders de las Vitrinas Verticales"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/caracoles/8.jpg" alt="Renders de la zona de Infografías"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/caracoles/9.jpg" alt="Renders Vitrina Totem" class="img-fluid">
+                    <img src="../imagenes/portfolio/caracoles/10.jpg" alt="Imagen Gracias por ver el proyecto"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Vitrinas Museo Scaglia -->
+
+    <div class="modal fade" id="portfolioModal26" tabindex="-1" aria-labelledby="portfolioModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_2.png" alt="Logo Diseño Gráfico" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">Acondicionamiento Vitrinas Museo Scaglia</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Diseño de piezas gráficas para acondicionar las vitrinas del Museo de Ciencias Naturales</p>
+                    <img src="../imagenes/portfolio/vitrinas/1.jpeg" alt="Imagen Vitrina Acondicionada Museo Scaglia"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/vitrinas/2.jpg" alt="Diseño cenefas para las vitrinas"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/vitrinas/3.jpg" alt="Imagen Vitrina Acondicionada Museo Scaglia 2"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/vitrinas/4.jpg" alt="Diseño carteles indicativos de las vitrinas"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/vitrinas/5.jpg" alt="Imagen Vitrina Acondicionada Museo Scaglia 3"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/vitrinas/6.jpg" alt="Diseño Infografia para vitrina"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/vitrinas/7.jpg" alt="Imagen Vitrina Acondicionada Museo Scaglia 4"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/vitrinas/8.jpg" alt="Diseño Infografia para panel lateral"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/vitrinas/9.jpg" alt="Imagen Vitrina Acondicionada Museo Scaglia 5"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/vitrinas/10.jpg" alt="Diseño Infografia para panel lateral 2"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/vitrinas/11.jpg" alt="Imagen Vitrina Acondicionada Museo Scaglia 6"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/vitrinas/12.jpg" alt="Imagen Vitrina Acondicionada Museo Scaglia 7"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/vitrinas/13.jpg" alt="Imagen Vitrina Acondicionada Museo Scaglia 8"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/gracias.jpg" alt="Imagen Gracias por ver el proyecto"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Señalética Scaglia -->
+
+    <div class="modal fade" id="portfolioModal25" tabindex="-1" aria-labelledby="portfolioModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_2.png" alt="Logo Diseño Gráfico" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">Señalética Museo Scaglia</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Diseño de Señalética para el Museo de Ciencias Naturales del Municipio de General Pueyrredon</p>
+                    <img src="../imagenes/portfolio/señaletica/1.jpg"
+                        alt="Presentación Proyecto Señalética Museo Scaglia" class="img-fluid">
+                    <img src="../imagenes/portfolio/señaletica/2.jpg"
+                        alt="Diseño Directorio de la Señalética del Museo Scaglia" class="img-fluid">
+                    <img src="../imagenes/portfolio/señaletica/3.jpg"
+                        alt="Imagen del totem exterior en la entrada del museo" class="img-fluid">
+                    <img src="../imagenes/portfolio/señaletica/4.jpg" alt="Diseño de los directorios por niveles"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/señaletica/5.jpg" alt="Pictogramas de las areas del museo"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/señaletica/6.jpg" alt="Imagen de los carteles por zonas"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/gracias.jpg" alt="Imagen Gracias por ver el proyecto"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Laboratorio Excellens -->
+
+    <div class="modal fade" id="portfolioModal24" tabindex="-1" aria-labelledby="portfolioModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_1.png" alt="Logo Diseño Industrial" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">Laboratorio Excellens</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Diseño de Instalaciones y Mobiliario para fábrica de lentes</p>
+                    <img src="../imagenes/portfolio/excellens/1.jpg"
+                        alt="Plano de diseño de Instalaciones Proyecto Laboratorio Excellens" class="img-fluid">
+                    <img src="../imagenes/portfolio/excellens/2.jpg"
+                        alt="Renders Diseño de Recepción Laboratorio Excellens" class="img-fluid">
+                    <img src="../imagenes/portfolio/excellens/3.jpg"
+                        alt="Renders Diseño de Administración Laboratorio Excellens" class="img-fluid">
+                    <img src="../imagenes/portfolio/excellens/4.jpg"
+                        alt="Renders Diseño de Administración Laboratorio Excellens 2" class="img-fluid">
+                    <img src="../imagenes/portfolio/excellens/5.jpg"
+                        alt="Renders Diseño de Sala Reuniones Laboratorio Excellens" class="img-fluid">
+                    <img src="../imagenes/portfolio/excellens/6.jpg" alt="Imagen Gracias por ver el proyecto"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Sabio Savia -->
+
+    <div class="modal fade" id="portfolioModal23" tabindex="-1" aria-labelledby="portfolioModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_2.png" alt="Logo Diseño Gráfico" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">Sabio Savia</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Diseño de identidad visual para vivero boutique</p>
+                    <img src="../imagenes/portfolio/sabio/1.jpg" alt="Presentación Proyecto Sabio Savia"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/sabio/2.jpg" alt="Presentación Proyecto Sabio Savia 2"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/sabio/3.jpg" alt="Imagen Gracias por ver el proyecto"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Pablo Caffi -->
+
+    <div class="modal fade" id="portfolioModal22" tabindex="-1" aria-labelledby="portfolioModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_2.png" alt="Logo Diseño Gráfico" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">Pablo Caffi</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Diseño de identidad visual para asesor de ventas de equipos de pesaje
+                    </p>
+                    <img src="../imagenes/portfolio/caffi/1.jpg" alt="Presentación Proyecto Pablo Caffi"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/caffi/2.jpg" alt="Presentación Proyecto Pablo Caffi 2"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/caffi/3.jpg" alt="Presentación Proyecto Pablo Caffi 3"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/caffi/4.gif" alt="Gif Logo Proyecto Pablo Caffi" class="img-fluid">
+                    <img src="../imagenes/portfolio/caffi/5.jpg" alt="Colores Proyecto Pablo Caffi" class="img-fluid">
+                    <img src="../imagenes/portfolio/caffi/6.jpg" alt="Tipografía Proyecto Pablo Caffi"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/caffi/7.jpg" alt="Aplicaciones Logo Pablo Caffi" class="img-fluid">
+                    <img src="../imagenes/portfolio/caffi/8.jpg" alt="Mockup tarjetas Logo Pablo Caffi"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/caffi/9.jpg" alt="Mockup taza Logo Pablo Caffi" class="img-fluid">
+                    <img src="../imagenes/portfolio/caffi/10.jpg" alt="Imagen Gracias por ver el proyecto"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal El Maná -->
+
+    <div class="modal fade" id="portfolioModal21" tabindex="-1" aria-labelledby="portfolioModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_2.png" alt="Logo Diseño Gráfico" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">El Maná</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Diseño de identidad visual para casa quinta</p>
+                    <img src="../imagenes/portfolio/mana/1.jpg" alt="Presentación Proyecto El Maná" class="img-fluid">
+                    <img src="../imagenes/portfolio/mana/2.jpg" alt="Presentación Proyecto El Maná 2" class="img-fluid">
+                    <img src="../imagenes/portfolio/mana/3.jpg" alt="Imagen Gracias por ver el proyecto"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal On Sex-Shop -->
+
+    <div class="modal fade" id="portfolioModal20" tabindex="-1" aria-labelledby="portfolioModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_2.png" alt="Logo Diseño Gráfico" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">On Sex-Shop</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Diseño de identidad visual para tienda de productos eróticos</p>
+                    <img src="../imagenes/portfolio/on/1.jpg" alt="Presentación Proyecto On Sex-Shop" class="img-fluid">
+                    <img src="../imagenes/portfolio/on/2.jpg" alt="Presentación Proyecto On Sex-Shop 2"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/on/3.jpg" alt="Presentación Proyecto On Sex-Shop 3"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Alma Showroom -->
+
+    <div class="modal fade" id="portfolioModal19" tabindex="-1" aria-labelledby="portfolioModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_2.png" alt="Logo Diseño Gráfico" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">Alma Showroom</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Diseño de identidad visual para emprendimiento de venta de ropa</p>
+                    <img src="../imagenes/portfolio/alma/1.jpg" alt="Presentación Proyecto Alma Showroom"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/alma/2.jpg" alt="Imagen Gracias por ver el proyecto"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Robles Suspensión -->
+
+    <div class="modal fade" id="portfolioModal18" tabindex="-1" aria-labelledby="portfolioModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_2.png" alt="Logo Diseño Gráfico" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">Robles Suspensión</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Diseño de identidad visual para taller mecánico especializado en suspensión y tren delantero</p>
+                    <img src="../imagenes/portfolio/robles/1.jpg" alt="Presentación Proyecto Robles Suspensión"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/robles/2.jpg" alt="Imagen Gracias por ver el proyecto"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Nexos -->
+
+    <div class="modal fade" id="portfolioModal17" tabindex="-1" aria-labelledby="portfolioModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_2.png" alt="Logo Diseño Gráfico" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">Nexos | Atención Infanto - Juvenil</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Diseño de identidad visual para equipo multidisciplinario de la salud</p>
+                    <img src="../imagenes/portfolio/nexos/1.jpg" alt="Presentación Proyecto Nexos" class="img-fluid">
+                    <img src="../imagenes/portfolio/nexos/2.jpg" alt="Imagen Gracias por ver el proyecto"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Nemel -->
+
+    <div class="modal fade" id="portfolioModal16" tabindex="-1" aria-labelledby="portfolioModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_2.png" alt="Logo Diseño Gráfico" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">Nemel Deco-Home</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Diseño de identidad visual para emprendimiento de decoración</p>
+                    <img src="../imagenes/portfolio/nemel/1.jpg" alt="Presentación Proyecto Nemel" class="img-fluid">
+                    <img src="../imagenes/portfolio/nemel/2.jpg" alt="Presentación Proyecto Nemel 2" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Lámina Aixa Franke -->
+
+    <div class="modal fade" id="portfolioModal15" tabindex="-1" aria-labelledby="portfolioModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_5.png" alt="Logo Ilustración" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">Mercedes de Aixa Franke</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lámina realizada a pedido de la piloto de carreras para entregar a sus sponsors</p>
+                    <img src="../imagenes/portfolio/aixa/1.jpg" alt="Lámina Aixa Franke" class="img-fluid">
+                    <img src="../imagenes/portfolio/aixa/2.jpg" alt="Imagen Gracias por ver el proyecto"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Autos Rapido y Furioso -->
+
+    <div class="modal fade" id="portfolioModal14" tabindex="-1" aria-labelledby="portfolioModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_5.png" alt="Logo Ilustración" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">Autos Rápido y Furioso</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Colección de Ilustraciones de la famosa saga de películas en tableta gráfica</p>
+                    <img src="../imagenes/portfolio/rapido/1.jpg" alt="Mitsubishi Eclipse" class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/rapido/2.jpg" alt="Mitsubishi Lancer" class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/rapido/3.jpg" alt="Toyota Supra" class="img-fluid">
+                    <img src="../imagenes/portfolio/gracias.jpg" alt="Imagen Gracias por ver el proyecto"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Mockups de Ilustraciones -->
+
+    <div class="modal fade" id="portfolioModal13" tabindex="-1" aria-labelledby="portfolioModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_5.png" alt="Logo Ilustración" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">Mockups de Ilustraciones</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Mockups de dibujos digitales realizados con tableta gráfica</p>
+                    <img src="../imagenes/portfolio/mockups/1.jpg" alt="X-Wing Star Wars" class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/mockups/2.jpg" alt="Mad Max" class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/mockups/3.jpg" alt="205 Gti" class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/mockups/4.jpg" alt="Nissan Fairlady" class="img-fluid">
+                    <img src="../imagenes/portfolio/gracias.jpg" alt="Imagen Gracias por ver el proyecto"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Ilustraciones Autos de Películas -->
+
+    <div class="modal fade" id="portfolioModal12" tabindex="-1" aria-labelledby="portfolioModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_5.png" alt="Logo Ilustración" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">Autos de Películas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Ilustraciones digitales con tableta gráfica de vehículos icónicos</p>
+                    <img src="../imagenes/portfolio/autos-peliculas/1.png" alt="Jeep Jurassic Park"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/autos-peliculas/2.png" alt="Volver al Futuro"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/autos-peliculas/3.jpg" alt="Herbie" class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/autos-peliculas/4.png" alt="Scobby Doo" class="img-fluid">
+                    <img src="../imagenes/portfolio/gracias.jpg" alt="Imagen Gracias por ver el proyecto"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Ilustraciones Digitales -->
+
+    <div class="modal fade" id="portfolioModal11" tabindex="-1" aria-labelledby="portfolioModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_5.png" alt="Logo Ilustración" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">Vehículos vectoriales</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Ilustraciones de autos en vectores, realizados con CorelDraw</p>
+                    <img src="../imagenes/portfolio/autos-vect/1.jpg" alt="Volskwagen Gol Vectorial" class="img-fluid">
+                    <img src="../imagenes/portfolio/autos-vect/2.jpg" alt="Ford Ecosport Vectorial" class="img-fluid">
+                    <img src="../imagenes/portfolio/autos-vect/3.jpg" alt="Fiat 147 Vectorial" class="img-fluid">
+                    <img src="../imagenes/portfolio/autos-vect/4.jpg" alt="Suzuki Fun Vectorial" class="img-fluid">
+                    <img src="../imagenes/portfolio/autos-vect/5.jpg" alt="Fiat Palio Vectorial" class="img-fluid">
+                    <img src="../imagenes/portfolio/autos-vect/6.jpg" alt="Peugeot 207 Vectorial" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Alto - Caseta Guardavidas -->
+
+    <div class="modal fade" id="portfolioModal10" tabindex="-1" aria-labelledby="portfolioModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_1.png" alt="Logo Diseño Industrial" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">Alto - Casilla de Guardavidas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Proyecto de Graduación - Caseta de Guardavidas transportable</p>
+                    <img src="../imagenes/portfolio/alto/1.jpg"
+                        alt="Presentación Proyecto Alto - Caseta de Guardavidas Transportable"
+                        alt="Imagen Proyecto Camión de Rescate" class="img-fluid">
+                    <img src="../imagenes/portfolio/alto/2.jpg"
+                        alt="Presentación Proyecto Alto - Caseta de Guardavidas Transportable 2"
+                        alt="Imagen Proyecto Cabina Información Turística 2" class="img-fluid">
+                    <img src="../imagenes/portfolio/alto/3.jpg"
+                        alt="Presentación Proyecto Alto - Caseta de Guardavidas Transportable 3"
+                        alt="Imagen Proyecto Cabina Información Turística 3" class="img-fluid">
+                    <img src="../imagenes/portfolio/alto/4.jpg"
+                        alt="Presentación Proyecto Alto - Caseta de Guardavidas Transportable 4"
+                        alt="Imagen Proyecto Cabina Información Turística 4" class="img-fluid">
+                    <img src="../imagenes/portfolio/alto/5.jpg" alt="Imagen Gracias por ver el proyecto"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Camión de Rescate -->
+
+    <div class="modal fade" id="portfolioModal9" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_1.png" alt="Logo Diseño Industrial" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">Vehículo de Rescate y Atención Primaria</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Diseño de camión anfibio de rescate para inundaciones con modulo de atención in situ
+                    </p>
+                    <img src="../imagenes/portfolio/rescate/1.jpg" alt="Presentación Proyecto Camión de Rescate"
+                        alt="Imagen Proyecto Camión de Rescate" class="img-fluid">
+                    <img src="../imagenes/portfolio/rescate/2.jpg" alt="Presentación Proyecto Camión de Rescate 2"
+                        alt="Imagen Proyecto Cabina Información Turística 2" class="img-fluid">
+                    <img src="../imagenes/portfolio/rescate/3.jpg" alt="Presentación Proyecto Camión de Rescate 3"
+                        alt="Imagen Proyecto Cabina Información Turística 3" class="img-fluid">
+                    <img src="../imagenes/portfolio/rescate/4.jpg" alt="Presentación Proyecto Camión de Rescate 4"
+                        alt="Imagen Proyecto Cabina Información Turística 4" class="img-fluid">
+                    <img src="../imagenes/portfolio/rescate/5.jpg" alt="Imagen Gracias por ver el proyecto"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Cabina Información Turística -->
+
+    <div class="modal fade" id="portfolioModal8" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_1.png" alt="Logo Diseño Industrial" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">Cabina de información Turística</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Diseño de módulo de atención al turista para la Municipalidad de General Pueyrredon</p>
+                    <img src="../imagenes/portfolio/caseta-info/1.jpg"
+                        alt="Presentación Proyecto Cabina información Turística"
+                        alt="Imagen Proyecto Cabina Información Turística" class="img-fluid">
+                    <img src="../imagenes/portfolio/caseta-info/2.jpg"
+                        alt="Presentación Proyecto Cabina información Turística 2"
+                        alt="Imagen Proyecto Cabina Información Turística 2" class="img-fluid">
+                    <img src="../imagenes/portfolio/caseta-info/3.jpg"
+                        alt="Presentación Proyecto Cabina información Turística 3"
+                        alt="Imagen Proyecto Cabina Información Turística 3" class="img-fluid">
+                    <img src="../imagenes/portfolio/caseta-info/4.jpg"
+                        alt="Presentación Proyecto Cabina información Turística 4"
+                        alt="Imagen Proyecto Cabina Información Turística 4" class="img-fluid">
+                    <img src="../imagenes/portfolio/gracias.jpg" alt="Imagen Gracias por ver el proyecto"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Llanta Seat -->
+
+    <div class="modal fade" id="portfolioModal7" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_1.png" alt="Logo Diseño Industrial" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">Llanta Seat Ibiza</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Modelado de llanta para cátedra de Informática de la UNMDP</p>
+                    <img src="../imagenes/portfolio/llanta-seat/1.jpg" alt="Presentación Proyecto Llanta Ibiza"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/llanta-seat/2.jpg" alt="Imagen Proyecto Llanta Ibiza"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/llanta-seat/3.jpg" alt="Imagen Proyecto Llanta Ibiza 2"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/llanta-seat/4.jpg" alt="Imagen Proyecto Llanta Ibiza 3"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/llanta-seat/5.jpg" alt="Imagen Proyecto Llanta Ibiza 4"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/llanta-seat/6.jpg" alt="Imagen Proyecto Llanta Ibiza 5"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/llanta-seat/7.jpg" alt="Imagen Proyecto Llanta Ibiza 6"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/gracias.jpg" alt="Imagen Gracias por ver el proyecto"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Caseta Artesanos -->
+
+    <div class="modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_1.png" alt="Logo Diseño Industrial" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">Puestos para Artesanos de Santa Clara del Mar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Proyecto seleccionado de la UNMDP para la implementación en el Municipio de Mar Chiquita</p>
+                    <img src="../imagenes/portfolio/caseta-art/1.jpg" alt="Presentación Proyecto Caseta Artesanos"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/caseta-art/2.jpg" alt="Imagen Proyecto Caseta Artesanos"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/caseta-art/3.jpg" alt="Imagen Proyecto Caseta Artesanos 2"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/caseta-art/4.jpg" alt="Imagen Proyecto Caseta Artesanos 3"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/caseta-art/5.jpg" alt="Imagen Proyecto Caseta Artesanos 4"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/caseta-art/6.jpg" alt="Foto implantación caseta en Santa Clara"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/caseta-art/7.jpg" alt="Foto implantación caseta en Santa Clara 2"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/gracias.jpg" alt="Imagen Gracias por ver el proyecto"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Carro Recuperadores Urbanos -->
+
+    <div class="modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_6.png" alt="Logo Modelado" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">Carro para Recuperadores Urbanos
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Proyecto realizado para la Municipalidad de General Pueyrredon</p>
+                    <img src="../imagenes/portfolio/recuperadores/1.jpg"
+                        alt="Presentación Proyecto carro para Recuperadores Urbanos" class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/recuperadores/2.jpg"
+                        alt="Imagen Proyecto carro para Recuperadores Urbanos 1" class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/recuperadores/3.jpg"
+                        alt="Imagen Proyecto carro para Recuperadores Urbanos 2" class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/recuperadores/4.jpg"
+                        alt="Imagen Proyecto carro para Recuperadores Urbanos 3" class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/recuperadores/5.jpg"
+                        alt="Imagen Proyecto carro para Recuperadores Urbanos 4" class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/recuperadores/6.jpg"
+                        alt="Imagen Proyecto carro para Recuperadores Urbanos 5" class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/recuperadores/7.jpg"
+                        alt="Imagen Proyecto carro para Recuperadores Urbanos 6" class="img-fluid">
+                    <img src="../imagenes/portfolio/gracias.jpg" alt="Imagen Gracias por ver el proyecto"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Robot 3D -->
+
+    <div class="modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_6.png" alt="Logo Modelado" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">Robot 3D</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Modelado de Robot para Escena Animada</p>
+                    <img src="../imagenes/portfolio/robot/1.jpg" alt="Presentación Proyecto Modelado Robot"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/robot/2.jpg" alt="Imagen Proyecto Modelado Robot"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/robot/3.jpg" alt="Imagen Proyecto Modelado Robot 2"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/robot/4.jpg" alt="Imagen Proyecto Modelado Robot 3"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/robot/5.jpg" alt="Imagen Proyecto Modelado Robot 4"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/gracias.jpg" alt="Imagen Gracias por ver el proyecto"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Ilustraciones Digitales -->
+
+    <div class="modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_5.png" alt="Logo Ilustración" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">Ilustraciones Digitales</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Algunas Ilustraciones realizadas con tableta digital</p>
+                    <img src="../imagenes/portfolio/Ilustraciones/1.jpg" alt="Imagen Ilustraciones Digitales 1"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/Ilustraciones/2.jpg" alt="Imagen Ilustraciones Digitales 2"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/Ilustraciones/3.jpg" alt="Imagen Ilustraciones Digitales 3"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/Ilustraciones/4.jpg" alt="Imagen Ilustraciones Digitales 4"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/gracias.jpg" alt="Imagen Gracias por ver el proyecto"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Plotter Mar del Plata -->
+
+    <div class="modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_5.png" alt="Logo Ilustración" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">Diseño de Plotter Silueta Mar del Plata</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Proyecto Freelancer para oficinas de la constructora Developer</p>
+                    <img src="../imagenes/portfolio/plotter-mdp/1.jpg" alt="Mockup plotter sobre pared"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/plotter-mdp/2.jpg" alt="Imagen proyecto Plotter mdp 2"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/plotter-mdp/3.jpg" alt="Imagen proyecto Plotter mdp 3"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/gracias.jpg" alt="Imagen Gracias por ver el proyecto"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Silverblade -->
+
+    <div class="modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../imagenes/icono_tarjetas_6.png" alt="Logo Modelado" class="modal-header-image">
+                    <h5 class="modal-title" id="portfolioModalLabel">Rediseño Silverblade 250</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        fill="currentColor"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Proyecto de la UNMDP para la marca de motos Benelli</p>
+                    <img src="../imagenes/portfolio/silverblade/1.jpg" alt="Imagen proyecto Silverblade Presentación1"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/silverblade/2.jpeg" alt="Imagen proyecto Silverblade 1"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/silverblade/3.jpg" alt="Imagen proyecto Silverblade 2"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/silverblade/4.jpg" alt="Imagen proyecto Silverblade 3"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/silverblade/5.jpg" alt="Imagen proyecto Silverblade 4"
+                        class="img-fluid"><br><br>
+                    <img src="../imagenes/portfolio/silverblade/6.jpg" alt="Imagen proyecto Silverblade 5"
+                        class="img-fluid">
+                    <img src="../imagenes/portfolio/gracias.jpg" alt="Imagen Gracias por ver el proyecto"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Footer -->
 
@@ -302,16 +1651,25 @@
                     <h5>Contacto</h5>
                     <ul>
                         <li><i class="icono-celular"><img src="../imagenes/icono_celular.png" alt="Icono Teléfono"></i>
-                            <span>+54 9 233-5 055 827</span>
+                            <span><a href="https://wa.me/542333489671" target="_blank">+54 9 233-3 489
+                                    671</a></span>
                         </li>
                         <li><i class="icono-email"><img src="../imagenes/icono_mail.png" alt="Icono E-mail"></i>
-                            <span>nfguagliardo@gmail.com</span>
+                            <span> <a
+                                    href="mailto:nahuelguagliardo@gmail.com?subject=Consulta%20desde%20la%20web&body=Hola%2C%20me%20gustaría%20obtener%20más%20información%20sobre%20...">nahuelguagliardo@gmail.com</a></span>
                         </li>
                         <li><i class="icon-location"><img src="../imagenes/icono_sitio.png"
                                     alt="Icono de Ubicación"></i>
-                            <span>Mar del Plata, Buenos Aires, Argentina</span>
+                            <span><a href="https://www.google.com/maps/search/?api=1&query=Mar+del+Plata%2C+Buenos+Aires%2C+Argentina"
+                                    target="_blank">
+                                    Mar del Plata, Buenos Aires, Argentina
+                                </a></span>
                         </li>
                     </ul>
+                    <div class="volver-arriba">
+                        <i class="icono-volver-arriba"><img src="../imagenes/flecha-arriba.png" alt="Icono Flecha arriba"></i>
+                        <a href="#arriba-port" class="boton-volver">Volver Arriba</a>
+                    </div>
                 </div>
             </div>
             <div class="footer-terminos">
@@ -319,6 +1677,10 @@
             </div>
         </div>
     </footer>
+
+    <!-- Bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Java Filtros -->
 
@@ -328,36 +1690,63 @@
             const tarjetas = document.querySelectorAll('.portfolio-tarjeta');
             const filtrosToggle = document.getElementById('filtros-toggle');
 
+            // Obtener el parámetro de filtro desde la URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const filterFromURL = urlParams.get('filter');
+
+            // Función para aplicar el filtro
+            function applyFilter(filterType) {
+                // Remover clase activa de todos los filtros
+                filters.forEach(f => f.classList.remove('active'));
+
+                // Agregar clase activa al filtro correspondiente
+                const selectedFilter = document.querySelector(`.portfolio-filtros a[data-filter="${filterType}"]`);
+                if (selectedFilter) {
+                    selectedFilter.classList.add('active');
+                }
+
+                // Mostrar u ocultar tarjetas en función del filtro
+                tarjetas.forEach(tarjeta => {
+                    if (filterType === 'all' || tarjeta.classList.contains(filterType)) {
+                        tarjeta.style.display = 'block';
+                    } else {
+                        tarjeta.style.display = 'none';
+                    }
+                });
+            }
+
+            // Aplicar el filtro desde la URL si está presente
+            if (filterFromURL) {
+                applyFilter(filterFromURL);
+            } else {
+                // Si no hay filtro en la URL, aplicar el filtro "all"
+                applyFilter('all');
+            }
+
+            // Añadir eventos de clic para los filtros
             filters.forEach(filter => {
                 filter.addEventListener('click', function (event) {
                     event.preventDefault();
 
-                    // Remover clase activa de todos los filtros
-                    filters.forEach(f => f.classList.remove('active'));
-
-                    // Agregar clase activa al filtro seleccionado
-                    this.classList.add('active');
-
                     // Obtener el tipo de filtro seleccionado
                     const filterType = this.getAttribute('data-filter');
 
-                    // Mostrar u ocultar tarjetas en función del filtro
-                    tarjetas.forEach(tarjeta => {
-                        if (filterType === 'all' || tarjeta.classList.contains(filterType)) {
-                            tarjeta.style.display = 'block';
-                        } else {
-                            tarjeta.style.display = 'none';
-                        }
-                    });
-
-                    // Cerrar el menú desplegable si se hace clic en un filtro
-                    if (filtrosToggle) {
-                        filtrosToggle.checked = false;
-                    }
+                    // Aplicar el filtro
+                    applyFilter(filterType);
                 });
             });
         });
 
+    </script>
+
+    <!-- JavaScript para cerrar el menú de filtros al hacer clic en una opción -->
+
+    <script>
+        document.querySelectorAll('.portfolio-filtros a').forEach(link => {
+            link.addEventListener('click', function () {
+                document.getElementById('filtros-toggle').checked = false;
+            });
+        });
     </script>
 
 </body>

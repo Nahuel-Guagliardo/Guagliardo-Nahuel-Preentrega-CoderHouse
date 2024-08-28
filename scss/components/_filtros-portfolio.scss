@@ -1,6 +1,10 @@
 // Estilo de Filtros Portfolio Desktop
 
 .portfolio-filtros-container {
+    
+    .filtros-toggle {
+        @include ocultar;
+    }
     .menu-mobile {
         @include ocultar;
     }
@@ -31,6 +35,8 @@
     }
 }
 
+// Media Queries Tablet / Mobile 650 px
+
 @media only screen and (max-width: 650px) {
 
     .portfolio-filtros-container {
@@ -43,7 +49,7 @@
 
         .menu-mobile {
             display: block;
-            z-index: 5;
+            z-index: 15;
 
             .filtros-toggle {
                 @include ocultar;
@@ -91,7 +97,7 @@
         }
 
         #filtros-toggle:checked~.portfolio-filtros {
-            @include ocultar;
+            display: block;
         }
     }
 }
